@@ -1531,11 +1531,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
     //For GreenCoin, first output must go to GreencoinFoundation address
     if (vtx[0].vout[0].scriptPubKey != GetFoundationScript())
-        return state.DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
+        return DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
 
-    int64 greencoinAmount = GetBlockValue(pindex->nHeight, 0) / 2;
+    int64_t greencoinAmount = GetBlockValue(nFees) / 2;
     if (vtx[0].vout[0].nValue < greencoinAmount)
-        return state.DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%"PRI64d" vs required=%"PRI64d")", vtx[0].vout[0].nValue, greencoinAmount));
+        return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[0].nValue, greencoinAmount));
 
 
     // ppcoin: track money supply and mint amount info
@@ -2048,9 +2048,6 @@ bool CBlock::AcceptBlock()
         return DoS(100, error("AcceptBlock() : reject too old nVersion = %d", nVersion));
     else if (!IsProtocolV2(nHeight) && nVersion > 6)
         return DoS(100, error("AcceptBlock() : reject too new nVersion = %d", nVersion));
-
-    if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
-        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))

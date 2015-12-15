@@ -12,7 +12,7 @@
 #include "net.h"
 #include "script.h"
 #include "scrypt.h"
-
+#include "base58.h"
 #include <list>
 
 class CBlock;
