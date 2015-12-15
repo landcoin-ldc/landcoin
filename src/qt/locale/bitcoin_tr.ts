@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BlackCoin</source>
-        <translation>BlackCoin Hakkında</translation>
+        <source>About GreenCoin</source>
+        <translation>GreenCoin Hakkında</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BlackCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BlackCoin&lt;/b&gt; versiyonu</translation>
+        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;GreenCoin&lt;/b&gt; versiyonu</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</source>
+Copyright © 2014 The GreenCoin developers</source>
         <translation>Telif Hakkı © 2009-2014 Bitcoin geliştiricileri
 Telif Hakkı © 2012-2014 NovaCoin geliştiricileri
-Telif Hakkı © 2014 BlackCoin geliştiricileri</translation>
+Telif Hakkı © 2014 GreenCoin geliştiricileri</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your BlackCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için BlackCoin adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
+        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için GreenCoin adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a BlackCoin address</source>
-        <translation>Bir BlackCoin adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
+        <source>Sign a message to prove you own a GreenCoin address</source>
+        <translation>Bir GreenCoin adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified BlackCoin address</source>
-        <translation>Mesajın, belirli bir BlackCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
+        <translation>Mesajın, belirli bir GreenCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+82"/>
-        <source>BlackCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>BlackCoin, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
+        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>GreenCoin, şifreleme işlemini tamamlamak için şimdi kapatılacak. Cüzdanınızı şifrelemenin; coinlerinizin, bilgisayarınızı etkileyen zararlı yazılımlar tarafından çalınmasını bütünüyle engelleyemeyebileceğini unutmayınız.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -357,8 +357,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BlackCoin</source>
-        <translation>BlackCoin hakkındaki bilgiyi göster</translation>
+        <source>Show information about GreenCoin</source>
+        <translation>GreenCoin hakkındaki bilgiyi göster</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,13 +397,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a BlackCoin address</source>
-        <translation>Bir BlackCoin adresine coin gönder</translation>
+        <source>Send coins to a GreenCoin address</source>
+        <translation>Bir GreenCoin adresine coin gönder</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for BlackCoin</source>
-        <translation>BlackCoin yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for GreenCoin</source>
+        <translation>GreenCoin yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -443,8 +443,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <source>GreenCoin</source>
+        <translation>GreenCoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -453,8 +453,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About BlackCoin</source>
-        <translation>BlackCoin &amp;Hakkında</translation>
+        <source>&amp;About GreenCoin</source>
+        <translation>GreenCoin &amp;Hakkında</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>BlackCoin client</source>
-        <translation>BlackCoin istemcisi</translation>
+        <source>GreenCoin client</source>
+        <translation>GreenCoin istemcisi</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to BlackCoin network</source>
-        <translation><numerusform>BlackCoin ağına %n etkin bağlantı</numerusform><numerusform>BlackCoin ağına %n etkin bağlantı</numerusform></translation>
+        <source>%n active connection(s) to GreenCoin network</source>
+        <translation><numerusform>GreenCoin ağına %n etkin bağlantı</numerusform><numerusform>GreenCoin ağına %n etkin bağlantı</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -605,8 +605,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid BlackCoin address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamadı! Bu, geçersiz bir BlackCoin adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamadı! Bu, geçersiz bir GreenCoin adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -728,8 +728,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. BlackCoin can no longer continue safely and will quit.</source>
-        <translation>Önemli bir hata oluştu. BlackCoin artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
+        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
+        <translation>Önemli bir hata oluştu. GreenCoin artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
     </message>
 </context>
 <context>
@@ -1062,8 +1062,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BlackCoin address.</source>
-        <translation>Girilen %1 adresi, geçerli bir BlackCoin adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
+        <translation>Girilen %1 adresi, geçerli bir GreenCoin adresi değildir.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1081,8 +1081,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>BlackCoin-Qt</source>
-        <translation>BlackCoin-Qt</translation>
+        <source>GreenCoin-Qt</source>
+        <translation>GreenCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1154,13 +1154,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BlackCoin after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra BlackCoin&apos;i otomatik olarak başlat</translation>
+        <source>Automatically start GreenCoin after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra GreenCoin&apos;i otomatik olarak başlat</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BlackCoin on system login</source>
-        <translation>Sisteme girişte BlackCoin&apos;i &amp;başlat</translation>
+        <source>&amp;Start GreenCoin on system login</source>
+        <translation>Sisteme girişte GreenCoin&apos;i &amp;başlat</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1169,8 +1169,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BlackCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticide BlackCoin istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
+        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticide GreenCoin istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1199,7 +1199,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1244,8 +1244,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BlackCoin.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, BlackCoin yeniden başlatıldığında etkin olacaktır.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
+        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, GreenCoin yeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1311,8 +1311,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BlackCoin.</source>
-        <translation>Bu ayar, BlackCoin&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
+        <source>This setting will take effect after restarting GreenCoin.</source>
+        <translation>Bu ayar, GreenCoin&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1330,8 +1330,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BlackCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak BlackCoin ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak GreenCoin ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1404,8 +1404,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
-        <translation>Blackcoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
+        <source>Cannot start greencoin: click-to-pay handler</source>
+        <translation>Greencoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
     </message>
 </context>
 <context>
@@ -1572,8 +1572,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BlackCoin-Qt help message to get a list with possible BlackCoin command-line options.</source>
-        <translation>Muhtemel BlackCoin komut satırı seçeneklerinin bir listesini getirmek için BlackCoin-Qt yardım mesajını göster</translation>
+        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
+        <translation>Muhtemel GreenCoin komut satırı seçeneklerinin bir listesini getirmek için GreenCoin-Qt yardım mesajını göster</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1592,13 +1592,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>BlackCoin - Debug window</source>
-        <translation>BlackCoin - Hata ayıklama penceresi</translation>
+        <source>GreenCoin - Debug window</source>
+        <translation>GreenCoin - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BlackCoin Core</source>
-        <translation>BlackCoin Core</translation>
+        <source>GreenCoin Core</source>
+        <translation>GreenCoin Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1607,8 +1607,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BlackCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>BlackCoin hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>GreenCoin hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1617,8 +1617,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the BlackCoin RPC console.</source>
-        <translation>BlackCoin RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the GreenCoin RPC console.</source>
+        <translation>GreenCoin RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1798,8 +1798,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir BlackCoin adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir GreenCoin adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1898,8 +1898,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid BlackCoin address</source>
-        <translation>UYARI: Geçersiz BlackCoin adresi</translation>
+        <source>WARNING: Invalid GreenCoin address</source>
+        <translation>UYARI: Geçersiz GreenCoin adresi</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1972,8 +1972,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir BlackCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir GreenCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2033,8 +2033,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BlackCoin address</source>
-        <translation>Bu BlackCoin adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this GreenCoin address</source>
+        <translation>Bu GreenCoin adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2065,8 +2065,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BlackCoin address</source>
-        <translation>Mesajın, belirtilen BlackCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
+        <translation>Mesajın, belirtilen GreenCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2076,8 +2076,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir BlackCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir GreenCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2086,8 +2086,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BlackCoin signature</source>
-        <translation>BlackCoin imzası gir</translation>
+        <source>Enter GreenCoin signature</source>
+        <translation>GreenCoin imzası gir</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2665,8 +2665,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>BlackCoin version</source>
-        <translation>BlackCoin versiyonu</translation>
+        <source>GreenCoin version</source>
+        <translation>GreenCoin versiyonu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2675,8 +2675,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or blackcoind</source>
-        <translation>-sunucu veya blackcoind&apos;ye komut gönder</translation>
+        <source>Send command to -server or greencoind</source>
+        <translation>-sunucu veya greencoind&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2695,13 +2695,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: blackcoin.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: blackcoin.conf)</translation>
+        <source>Specify configuration file (default: greencoin.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: greencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: blackcoind.pid)</source>
-        <translation>pid dosyasını belirt (varsayılan: blackcoin.pid)</translation>
+        <source>Specify pid file (default: greencoind.pid)</source>
+        <translation>pid dosyasını belirt (varsayılan: greencoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2718,24 +2718,24 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=greencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz: 
 %s
 Aşağıdaki rastgele şifreyi kullanmanız tavsiye edilir:
-rpcuser=blackcoinrpc
+rpcuser=greencoinrpc
 rpcpassword=%s
 (bu şifreyi hatırlamanız gerekmemektedir)
 Kullanıcı adı ve şifre aynı OLMAMALIDIR.
 Dosya mevcut değilse, sadece sahibi tarafından okunabilir yetkiyle yaratın.
 Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanız önerilir;
-örneğin: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarmı&quot; admin@foo.com
+örneğin: alertnotify=echo %%s | mail -s &quot;GreenCoin Alarmı&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2840,8 +2840,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BlackCoin will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, BlackCoin düzgün çalışmayacaktır.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, GreenCoin düzgün çalışmayacaktır.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3135,8 +3135,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
-        <translation>Başlangıç uygunluk kontrolü başarısız oldu. BlackCoin kapatılıyor.</translation>
+        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
+        <translation>Başlangıç uygunluk kontrolü başarısız oldu. GreenCoin kapatılıyor.</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3190,13 +3190,13 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BlackCoin</source>
-        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir BlackCoin versiyonuna ihtiyaç duyuyor.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
+        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir GreenCoin versiyonuna ihtiyaç duyuyor.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart BlackCoin to complete</source>
-        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için BlackCoin&apos;i yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
+        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için GreenCoin&apos;i yeniden başlatın</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3255,8 +3255,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. BlackCoin is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağlanamadı. BlackCoin muhtemelen halen çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
+        <translation>Bu bilgisayarda %s bağlanamadı. GreenCoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3290,8 +3290,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
-        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. BlackCoin muhtemelen halen çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
+        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. GreenCoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+4"/>

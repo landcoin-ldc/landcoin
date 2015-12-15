@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "BlackCoin cannot be compiled without assertions."
+# error "GreenCoin cannot be compiled without assertions."
 #endif
 
 //
@@ -77,7 +77,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "BlackCoin Signed Message:\n";
+const string strMessageMagic = "GreenCoin Signed Message:\n";
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -2625,7 +2625,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("blackcoin-loadblk");
+    RenameThread("greencoin-loadblk");
 
     CImportingNow imp;
 
