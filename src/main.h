@@ -365,7 +365,10 @@ public:
         return str;
     }
 
-
+    void print() const
+    {
+	printf("%s", ToString().c_str());
+    }
     bool ReadFromDisk(CTxDB& txdb, COutPoint prevout, CTxIndex& txindexRet);
     bool ReadFromDisk(CTxDB& txdb, COutPoint prevout);
     bool ReadFromDisk(COutPoint prevout);
@@ -827,8 +830,7 @@ public:
         s << "\n";
         return s.str();
     }
-
-
+    void print() const;
     bool DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex);
     bool ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck=false);
     bool ReadFromDisk(const CBlockIndex* pindex, bool fReadTransactions=true);

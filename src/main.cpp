@@ -894,6 +894,27 @@ CBlockIndex* FindBlockByHeight(int nHeight)
     return pblockindex;
 }
 
+void CBlock::print() const
+{
+    printf("CBlock(hash=%s, ver=%d, pow_hash=%s, hashPrevBlock=%s, hashMerkleRoot=%s, nTime=%u, nBits=%08x, nNonce=%u, vtx=%zu)\n",
+        GetHash().ToString().c_str(),
+        nVersion,
+        GetPoWHash().ToString().c_str(),
+        hashPrevBlock.ToString().c_str(),
+        hashMerkleRoot.ToString().c_str(),
+        nTime, nBits, nNonce,
+        vtx.size());
+    for (unsigned int i = 0; i < vtx.size(); i++)
+    {
+        printf("  ");
+        vtx[i].print();
+    }
+    printf("  vMerkleTree: ");
+    for (unsigned int i = 0; i < vMerkleTree.size(); i++)
+        printf("%s ", vMerkleTree[i].ToString().c_str());
+    printf("\n");
+}
+
 bool CBlock::ReadFromDisk(const CBlockIndex* pindex, bool fReadTransactions)
 {
     if (!fReadTransactions)
