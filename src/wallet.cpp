@@ -1542,6 +1542,12 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, int64_t nValue, CWalletTx&
 {
     vector< pair<CScript, int64_t> > vecSend;
     vecSend.push_back(make_pair(scriptPubKey, nValue));
+    if(strlen(wtxNew.mapValue["data"].c_str()) > 0) {
+       const char *conststr  = wtxNew.mapValue["data"].c_str();
+       int64_t val = 1000000;
+       CScript script = CScript() << OP_RETURN << vector<unsigned char>((const unsigned char*)conststr, (const unsigned char*)conststr + strlen(conststr));
+       vecSend.push_back(make_pair(script, val));
+    }
     return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, coinControl);
 }
 
