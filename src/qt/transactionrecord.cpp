@@ -30,6 +30,11 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
     int64_t nDebit = wtx.GetDebit();
     int64_t nNet = nCredit - nDebit;
     uint256 hash = wtx.GetHash(), hashPrev = 0;
+    std::string txcomment = "";
+    if (!wtx.strTxComment.empty())
+    {
+        txcomment = wtx.strTxComment;
+    }
     std::map<std::string, std::string> mapValue = wtx.mapValue;
 
     if (nNet > 0 || wtx.IsCoinBase() || wtx.IsCoinStake())
@@ -114,6 +119,12 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
                     // Ignore parts sent to self, as this is usually the change
                     // from a transaction sent back to our own address.
                     continue;
+                }
+
+		if (txout.IsOpReturn())
+                {
+                    // OP_RETURN txout
+                    //continue;
                 }
 
                 CTxDestination address;

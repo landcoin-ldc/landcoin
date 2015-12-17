@@ -53,6 +53,10 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, Object& entry)
     entry.push_back(Pair("version", tx.nVersion));
     entry.push_back(Pair("time", (int64_t)tx.nTime));
     entry.push_back(Pair("locktime", (int64_t)tx.nLockTime));
+    if (tx.nVersion >= 2)
+    {
+        entry.push_back(Pair("tx-comment", tx.strTxComment));
+    }
     Array vin;
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
     {
@@ -247,7 +251,15 @@ Value createrawtransaction(const Array& params, bool fHelp)
     Object sendTo = params[1].get_obj();
 
     CTransaction rawTx;
-
+    if (params.size() == 3) 
+    {
+       std::string txcomment = params[2].get_str();
+       if (txcomment.length() > MAX_TX_COMMENT_LEN)
+       {
+          txcomment.resize(MAX_TX_COMMENT_LEN);
+       }
+       rawTx.strTxComment = txcomment;
+    }
     BOOST_FOREACH(Value& input, inputs)
     {
         const Object& o = input.get_obj();

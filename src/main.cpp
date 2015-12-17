@@ -45,6 +45,10 @@ CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 int nStakeMinConfirmations = 500;
 unsigned int nStakeMinAge = 24 * 60 * 60; // 24 hours
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
+/** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
+int64_t CTransaction::nMinTxFee = 5000000;  // Override with -mintxfee
+/** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
+int64_t CTransaction::nMinRelayTxFee = 20000;
 
 int nCoinbaseMaturity = 500;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -268,11 +272,16 @@ bool CTransaction::ReadFromDisk(COutPoint prevout)
 
 bool IsStandardTx(const CTransaction& tx, string& reason)
 {
-    if (tx.nVersion > CTransaction::CURRENT_VERSION || tx.nVersion < 1) {
+    if (tx.nVersion > CTransaction::TXCOMMENT_VERSION || tx.nVersion < 1) {
         reason = "version";
         return false;
     }
 
+    // Disallow large transaction comments
+    if (tx.strTxComment.length() > MAX_TX_COMMENT_LEN) {
+	reason = "msg-length";
+	return false;
+    }
     // Treat non-final transactions as non-standard to prevent a specific type
     // of double-spend attack, as well as DoS attacks. (if the transaction
     // can't be mined, the attacker isn't expending resources broadcasting it)
@@ -304,7 +313,7 @@ bool IsStandardTx(const CTransaction& tx, string& reason)
     // almost as much to process as they cost the sender in fees, because
     // computing signature hashes is O(ninputs*txsize). Limiting transactions
     // to MAX_STANDARD_TX_SIZE mitigates CPU exhaustion attacks.
-    unsigned int sz = tx.GetSerializeSize(SER_NETWORK, CTransaction::CURRENT_VERSION);
+    unsigned int sz = tx.GetSerializeSize(SER_NETWORK, tx.nVersion);
     if (sz >= MAX_STANDARD_TX_SIZE) {
         reason = "tx-size";
         return false;

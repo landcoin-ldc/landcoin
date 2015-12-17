@@ -1393,7 +1393,7 @@ bool CWallet::SelectCoinsForStaking(int64_t nTargetValue, unsigned int nSpendTim
     return true;
 }
 
-bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, const CCoinControl* coinControl)
+bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, const CCoinControl* coinControl, std::string strTxComment)
 {
     int64_t nValue = 0;
     BOOST_FOREACH (const PAIRTYPE(CScript, int64_t)& s, vecSend)
@@ -1406,7 +1406,10 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
         return false;
 
     wtxNew.BindWallet(this);
-
+    // transaction comment
+    wtxNew.strTxComment = strTxComment;
+    if (wtxNew.strTxComment.length() > MAX_TX_COMMENT_LEN)
+	wtxNew.strTxComment.resize(MAX_TX_COMMENT_LEN);
     // Discourage fee sniping.
     //
     // However because of a off-by-one-error in previous versions we need to
@@ -1445,8 +1448,38 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
                 double dPriority = 0;
                 // vouts to the payees
                 BOOST_FOREACH (const PAIRTYPE(CScript, int64_t)& s, vecSend)
-                    wtxNew.vout.push_back(CTxOut(s.second, s.first));
+		{
+                	CTxOut txout(s.second, s.first);
+		    	CScript::const_iterator itTxA = txout.scriptPubKey.begin();
 
+                    	if (!txout.IsOpReturn())
+			{
+				if (txout.IsDust(CTransaction::nMinRelayTxFee))
+				{
+                            		LogPrintf("%s Rejected. Amount Too Small (DUST)\n", txout.ToString());
+                            		return false;
+                         	}
+			}
+			else
+			{
+				int64_t size = txout.scriptPubKey.ToString().length();
+				LogPrint("GetMinFee()", "Bytes: %d\n",size);
+
+				if (size > 1024)
+				{
+					LogPrintf("%s Rejected. OP_RETURN Size too large\n", txout.ToString());
+					return false;
+				}
+				else
+				{
+					int64_t OpReturnFee = (size *= OP_RETURN_FEE_MULTIPLER);
+					nFeeRet += OpReturnFee;
+				}
+
+
+			}
+                    	wtxNew.vout.push_back(CTxOut(s.second, s.first));
+		}
                 // Choose coins to use
                 set<pair<const CWalletTx*,unsigned int> > setCoins;
                 int64_t nValueIn = 0;
@@ -1538,7 +1571,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
     return true;
 }
 
-bool CWallet::CreateTransaction(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, const CCoinControl* coinControl)
+bool CWallet::CreateTransaction(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew, CReserveKey& reservekey, int64_t& nFeeRet, const CCoinControl* coinControl, std::string strTxComment)
 {
     vector< pair<CScript, int64_t> > vecSend;
     vecSend.push_back(make_pair(scriptPubKey, nValue));
@@ -1548,7 +1581,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, int64_t nValue, CWalletTx&
        CScript script = CScript() << OP_RETURN << vector<unsigned char>((const unsigned char*)conststr, (const unsigned char*)conststr + strlen(conststr));
        vecSend.push_back(make_pair(script, val));
     }
-    return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, coinControl);
+    return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, coinControl, strTxComment);
 }
 
 uint64_t CWallet::GetStakeWeight() const
@@ -1841,10 +1874,11 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)
 
 
 
-string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew, bool fAskFee)
+string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNew, bool fAskFee, std::string strTxComment)
 {
     CReserveKey reservekey(this);
     int64_t nFeeRequired;
+    const CCoinControl *coinControl = NULL;
 
     if (IsLocked())
     {
@@ -1858,7 +1892,7 @@ string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNe
         LogPrintf("SendMoney() : %s", strError);
         return strError;
     }
-    if (!CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired))
+    if (!CreateTransaction(scriptPubKey, nValue, wtxNew, reservekey, nFeeRequired, coinControl, strTxComment))
     {
         string strError;
         if (nValue + nFeeRequired > GetBalance())
@@ -1880,7 +1914,7 @@ string CWallet::SendMoney(CScript scriptPubKey, int64_t nValue, CWalletTx& wtxNe
 
 
 
-string CWallet::SendMoneyToDestination(const CTxDestination& address, int64_t nValue, CWalletTx& wtxNew, bool fAskFee)
+string CWallet::SendMoneyToDestination(const CTxDestination& address, int64_t nValue, CWalletTx& wtxNew, bool fAskFee, std::string strTxComment)
 {
     // Check amount
     if (nValue <= 0)
@@ -1892,7 +1926,7 @@ string CWallet::SendMoneyToDestination(const CTxDestination& address, int64_t nV
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address);
 
-    return SendMoney(scriptPubKey, nValue, wtxNew, fAskFee);
+    return SendMoney(scriptPubKey, nValue, wtxNew, fAskFee, strTxComment);
 }
 
 

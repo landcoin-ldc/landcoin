@@ -199,7 +199,10 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         CWalletTx wtx;
         CReserveKey keyChange(wallet);
         int64_t nFeeRequired = 0;
-        bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired, coinControl);
+	std::string strTxComment = txcomment.toStdString();
+	if (!strTxComment.empty())
+		strTxComment = "text:" + strTxComment;
+        bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired, coinControl, strTxComment);
 
         if(!fCreated)
         {
