@@ -55,24 +55,14 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
-
-inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 38423; }
-inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 319000; }
-inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1444028400; }
-
-inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }
-inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 15; }
-inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? FutureDriftV2(nTime) : FutureDriftV1(nTime); }
-
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 120 : 120; }
-
-#define FOUNDATION_ADDRESS "CZ4a9SMt3QrFFuK7KJWmLaeVNgGKyQm28W"
-
-inline CScript GetFoundationScript() {
-	CBitcoinAddress address(FOUNDATION_ADDRESS);
-        CScript script;
-        script.SetDestination(address.Get());
-        return script;
+inline int64_t FutureDrift(int64_t nTime, int nHeight) { return nTime + 15 * 60;}
+inline unsigned int GetTargetSpacing(int nHeight) { return 120; }
+inline CScript GetFoundationScript()
+{
+	CBitcoinAddress address = "GZmwbKXfrF7a5sLKL5gEYi9jZnmn1bZBFd";
+	CScript payOutScript;
+	payOutScript.SetDestination(address.Get());
+	return payOutScript;
 }
 
 extern CScript COINBASE_FLAGS;
@@ -1011,10 +1001,7 @@ public:
 
     int64_t GetPastTimeLimit() const
     {
-        if (IsProtocolV2(nHeight))
-            return GetBlockTime();
-        else
-            return GetMedianTimePast();
+        return GetBlockTime();
     }
 
     enum { nMedianTimeSpan=11 };

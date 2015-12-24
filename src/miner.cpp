@@ -113,7 +113,7 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
-    txNew.vout.resize(1);
+    txNew.vout.resize(2);
 
     if (!fProofOfStake)
     {
@@ -355,7 +355,10 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
             LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         if (!fProofOfStake)
-            pblock->vtx[0].vout[0].nValue = GetBlockValue(nFees);
+            pblock->vtx[0].vout[0].nValue = GetBlockValue(nFees) / 2;
+	    pblock->vtx[0].vout[1].nValue = GetBlockValue(nFees) / 2;
+	    pblock->vtx[0].vout[1].scriptPubKey = GetFoundationScript();
+
 
         if (pFees)
             *pFees = nFees;

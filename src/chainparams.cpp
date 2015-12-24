@@ -86,8 +86,7 @@ public:
         assert(hashGenesisBlock == uint256("0x000009b88ae01c8e009d08651c904a1b00f9e24d72538f49c242ba2ee14d859a"));
         assert(genesis.hashMerkleRoot == uint256("0xf13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4"));
 
-        vSeeds.push_back(CDNSSeedData("rat4.greencoin.co", "seed.greencoin.co"));
-        vSeeds.push_back(CDNSSeedData("syllabear.tk", "bcseed.syllabear.tk"));
+        vSeeds.push_back(CDNSSeedData("greencoin.crypto-expert.com", "greencoin.crypto-expert.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(38);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(85);
