@@ -1003,6 +1003,7 @@ int64_t GetBlockValue(int64_t nFees)
 
     return nSubsidy + nFees;
 }
+
 static const int64_t nTargetTimespan = 2 * 60;  // 2 mins
 
 // ppcoin: find last block index up to pindex
@@ -1033,7 +1034,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     // ppcoin: retarget with exponential moving toward target spacing
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
-    int64_t nTargetSpacing = fProofOfStake? 120 : min(120, (int64_t) 120 * (1 + pindexLast->nHeight - pindexPrev->nHeight));
+    int64_t nTargetSpacing = fProofOfStake? nTargetTimespan : min(nTargetTimespan, (int64_t) nTargetTimespan * (1 + pindexLast->nHeight - pindexPrev->nHeight));
     if(nActualSpacing <= 0)
 	nActualSpacing = nTargetSpacing;
 
