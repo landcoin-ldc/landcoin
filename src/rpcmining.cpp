@@ -600,7 +600,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
     aux.push_back(Pair("flags", HexStr(COINBASE_FLAGS.begin(), COINBASE_FLAGS.end())));
 
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
-
+    int64_t blockReward = pblock->vtx[0].vout[0].nValue + pblock->vtx[0].vout[1].nValue;
     static Array aMutable;
     if (aMutable.empty())
     {
@@ -614,7 +614,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
     result.push_back(Pair("previousblockhash", pblock->hashPrevBlock.GetHex()));
     result.push_back(Pair("transactions", transactions));
     result.push_back(Pair("coinbaseaux", aux));
-    result.push_back(Pair("coinbasevalue", (int64_t)pblock->vtx[0].vout[0].nValue));
+    result.push_back(Pair("coinbasevalue", blockReward));
     result.push_back(Pair("target", hashTarget.GetHex()));
     result.push_back(Pair("mintime", (int64_t)pindexPrev->GetPastTimeLimit()+1));
     result.push_back(Pair("mutable", aMutable));
