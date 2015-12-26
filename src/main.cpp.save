@@ -39,22 +39,18 @@ CTxMemPool mempool;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 
-CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
-CBigNum bnProofOfStakeLimit(~uint256(0) >> 12);
-unsigned int nStakeTargetSpacing  = 60 * 2; 		// 2-minute block spacing
-unsigned int nTargetSpacing       = 60 * 2;             // 2-minute block spacing
-unsigned int nStakeMinAge         = 60 * 1;  		// 1 hour
-unsigned int nStakeMinAgeAdjusted = 60 * 1;  		// 4 Hours after block 10000
-unsigned int nStakeMaxAge       = -1; 			// No Max Age
-unsigned int nModifierInterval  = 5 * 60;          	// time to elapse before new modifier is computed
+CBigNum bnProofOfStakeLimit(~uint256(0) >> 48);
 
 int nStakeMinConfirmations = 500;
+unsigned int nStakeMinAge = 24 * 60 * 60; // 24 hours
+unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64_t CTransaction::nMinTxFee = 5000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
 int64_t CTransaction::nMinRelayTxFee = 20000;
 
 int nCoinbaseMaturity = 20;
+int nCoinstakeMaturity = 500;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -1009,44 +1005,7 @@ int64_t GetBlockValue(int64_t nFees)
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 0.16 * 24 * 60 * 60;  // 4-hour
-static const int64_t nTargetSpacingWorkMax = 12 * nStakeTargetSpacing; // 2-hour
-
-// maximum nBits value could possible be required nTime after
-//
-unsigned int ComputeMaxBits(CBigNum bnTargetLimit, unsigned int nBase, int64_t nTime)
-{
-    CBigNum bnResult;
-    bnResult.SetCompact(nBase);
-    bnResult *= 2;
-    while (nTime > 0 && bnResult < bnTargetLimit)
-    {
-        // Maximum 200% adjustment per day...
-        bnResult *= 2;
-        nTime -= 24 * 60 * 60;
-    }
-    if (bnResult > bnTargetLimit)
-        bnResult = bnTargetLimit;
-    return bnResult.GetCompact();
-}
-
-//
-// minimum amount of work that could possibly be required nTime after
-// minimum proof-of-work required was nBase
-//
-unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime)
-{
-    return ComputeMaxBits(bnProofOfWorkLimit, nBase, nTime);
-}
-
-//
-// minimum amount of stake that could possibly be required nTime after
-// minimum proof-of-stake required was nBase
-//
-unsigned int ComputeMinStake(unsigned int nBase, int64_t nTime, unsigned int nBlockTime)
-{
-    return ComputeMaxBits(bnProofOfStakeLimit, nBase, nTime);
-}
+static const int64_t nTargetTimespan = 2 * 60;  // 2 mins
 
 // ppcoin: find last block index up to pindex
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
@@ -1058,7 +1017,7 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
 
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    CBigNum bnTargetLimit = !fProofOfStake ? bnProofOfWorkLimit : bnProofOfStakeLimit;
+    CBigNum bnTargetLimit = fProofOfStake ? Params().ProofOfStakeLimit(): Params().ProofOfWorkLimit();
 
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
@@ -1071,19 +1030,22 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
         return bnTargetLimit.GetCompact(); // second block
 
     int64_t nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-    int64_t nTargetSpacing = fProofOfStake? nStakeTargetSpacing : min(nTargetSpacingWorkMax, (int64_t) nStakeTargetSpacing * (1 + pindexLast->nHeight - pindexPrev->nHeight));
 
-    if (nActualSpacing < 0)
-        nActualSpacing = nTargetSpacing;
-
+    // ppcoin: target change every block
+    // ppcoin: retarget with exponential moving toward target spacing
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
+    int64_t nTargetSpacing = fProofOfStake? nTargetTimespan : min(nTargetTimespan, (int64_t) nTargetTimespan * (1 + pindexLast->nHeight - pindexPrev->nHeight));
+    if(nActualSpacing < nTargetSpacing / 4)
+	nActualSpacing = nTargetSpacing / 4;
+    if(nActualSpacing > nTargetSpacing * 4)
+	nActualSpacing = nTargetSpacing * 4;
 
     int64_t nInterval = nTargetTimespan / nTargetSpacing;
     bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
     bnNew /= ((nInterval + 1) * nTargetSpacing);
 
-    if (bnNew > bnTargetLimit)
+    if (bnNew <= 0 || bnNew > bnTargetLimit)
         bnNew = bnTargetLimit;
 
     return bnNew.GetCompact();
@@ -2200,22 +2162,6 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         // Extra checks to prevent "fill up memory by spamming with bogus blocks"
         const CBlockIndex* pcheckpoint = Checkpoints::AutoSelectSyncCheckpoint();
         int64_t deltaTime = pblock->GetBlockTime() - pcheckpoint->nTime;
-        CBigNum bnNewBlock;
-        bnNewBlock.SetCompact(pblock->nBits);
-        CBigNum bnRequired;
-
-        if (pblock->IsProofOfStake())
-            bnRequired.SetCompact(ComputeMinStake(GetLastBlockIndex(pcheckpoint, true)->nBits, deltaTime, pblock->nTime));
-        else
-            bnRequired.SetCompact(ComputeMinWork(GetLastBlockIndex(pcheckpoint, false)->nBits, deltaTime));
-
-        if (bnNewBlock > bnRequired)
-        {
-            if (pfrom)
-                pfrom->Misbehaving(100);
-            return error("ProcessBlock() : block with too little %s", pblock->IsProofOfStake()? "proof-of-stake" : "proof-of-work");
-        }
-
         if (deltaTime < 0)
         {
             if (pfrom)
