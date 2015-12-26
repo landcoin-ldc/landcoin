@@ -82,7 +82,7 @@ public:
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 921682;
 	hashGenesisBlock = genesis.GetHash();
-	nLastPoWBlock    = 200;
+	nLastPoWBlock    = 2160;
         assert(hashGenesisBlock == uint256("0x000009b88ae01c8e009d08651c904a1b00f9e24d72538f49c242ba2ee14d859a"));
         assert(genesis.hashMerkleRoot == uint256("0xf13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4"));
 
