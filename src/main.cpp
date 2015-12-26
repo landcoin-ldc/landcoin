@@ -43,10 +43,10 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 12);
 unsigned int nStakeTargetSpacing  = 60 * 2; 		// 2-minute block spacing
 unsigned int nTargetSpacing       = 60 * 2;             // 2-minute block spacing
-unsigned int nStakeMinAge         = 60 * 1;  		// 1 hour
-unsigned int nStakeMinAgeAdjusted = 60 * 1;  		// 4 Hours after block 10000
-unsigned int nStakeMaxAge       = -1; 			// No Max Age
-unsigned int nModifierInterval  = 5 * 60;          	// time to elapse before new modifier is computed
+unsigned int nStakeMinAge         = 60 * 60 * 24;	// 1 hour
+unsigned int nStakeMinAgeAdjusted = 60 * 60 * 24;  	// 4 Hours after block 10000
+unsigned int nStakeMaxAge         = -1; 		// No Max Age
+unsigned int nModifierInterval    = 5 * 60;          	// time to elapse before new modifier is computed
 
 int nStakeMinConfirmations = 500;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
