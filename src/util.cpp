@@ -954,7 +954,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.greencoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "GreenCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "GreenCoinV2";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -966,10 +966,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "GreenCoin";
+    return pathRet / "GreenCoinV2";
 #else
     // Unix
-    return pathRet / ".greencoin";
+    return pathRet / ".greencoinv2";
 #endif
 #endif
 }
@@ -1018,7 +1018,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "greencoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "greencoinv2.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
