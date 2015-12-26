@@ -1004,6 +1004,8 @@ int64_t GetBlockValue(int64_t nFees)
 {
     int64_t nSubsidy = 40000 * COIN;
 
+    if(pindexBest->nHeight == 1)
+       nSubsidy = 160002000 * COIN;
     LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
 
     return nSubsidy + nFees;
