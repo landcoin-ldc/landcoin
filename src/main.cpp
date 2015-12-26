@@ -1560,18 +1560,29 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
+
+    	//For GreenCoin, first output must go to GreencoinFoundation address
+    	if (vtx[1].vout[2].scriptPubKey != GetFoundationScript())
+            return DoS(100, error("ConnectBlock() : coinstake does not pay to the charity in the first output"));
+
+        int64_t non_fee = 0;
+        int64_t greencoinAmount = GetBlockValue(non_fee) / 2;
+        if (vtx[1].vout[2].nValue < greencoinAmount)
+            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[2].nValue, greencoinAmount));
+
     }
+    else if (IsProofOfWork())
+    {
+    	//For GreenCoin, first output must go to GreencoinFoundation address
+    	if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
+            return DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
 
-    //For GreenCoin, first output must go to GreencoinFoundation address
-    if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
-        return DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
+    	int64_t non_fee = 0;
+    	int64_t greencoinAmount = GetBlockValue(non_fee) / 2;
+    	if (vtx[0].vout[1].nValue < greencoinAmount)
+            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[0].nValue, greencoinAmount));
 
-    int64_t non_fee = 0;
-    int64_t greencoinAmount = GetBlockValue(non_fee) / 2;
-    if (vtx[0].vout[1].nValue < greencoinAmount)
-        return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[0].nValue, greencoinAmount));
-
-
+    }
     // ppcoin: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;

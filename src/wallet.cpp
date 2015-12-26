@@ -1609,6 +1609,7 @@ uint64_t CWallet::GetStakeWeight() const
     return nWeight;
 }
 
+
 bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int64_t nSearchInterval, int64_t nFees, CTransaction& txNew, CKey& key)
 {
     CBlockIndex* pindexPrev = pindexBest;
@@ -1707,7 +1708,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
                 nCredit += pcoin.first->vout[pcoin.second].nValue;
                 vwtxPrev.push_back(pcoin.first);
                 txNew.vout.push_back(CTxOut(0, scriptPubKeyOut));
-		txNew.vout.push_back(CTxOut(0, GetFoundationScript()));
 
                 LogPrint("coinstake", "CreateCoinStake : added kernel type=%d\n", whichType);
                 fKernelFound = true;
@@ -1761,17 +1761,13 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         nCredit += nReward;
     }
 
-    if (nCredit >= GetStakeSplitThreshold())
-        txNew.vout.push_back(CTxOut(0, txNew.vout[1].scriptPubKey)); //split stake
+    //if (nCredit >= GetStakeSplitThreshold())
+    //    txNew.vout.push_back(CTxOut(0, txNew.vout[1].scriptPubKey)); //split stake
 
+    txNew.vout.push_back(CTxOut(0, GetFoundationScript()));
     // Set output amount
-    if (txNew.vout.size() == 3)
-    {
-        txNew.vout[1].nValue = (nCredit / 2 / CENT) * CENT;
-        txNew.vout[2].nValue = nCredit - txNew.vout[1].nValue;
-    }
-    else
-        txNew.vout[1].nValue = nCredit;
+    txNew.vout[1].nValue = (nCredit / 2 / CENT) * CENT;
+    txNew.vout[2].nValue = nCredit - txNew.vout[1].nValue;
 
     // Sign
     int nIn = 0;
@@ -1789,7 +1785,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     // Successfully generated coinstake
     return true;
 }
-
 
 // Call after CreateTransaction unless you want to abort
 bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey)

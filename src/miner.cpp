@@ -113,7 +113,7 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
-    txNew.vout.resize(2);
+    txNew.vout.resize(1);
 
     if (!fProofOfStake)
     {
@@ -356,8 +356,6 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
 
         if (!fProofOfStake)
             pblock->vtx[0].vout[0].nValue = GetBlockValue(nFees) / 2;
-	    pblock->vtx[0].vout[1].nValue = GetBlockValue(nFees) / 2;
-	    pblock->vtx[0].vout[1].scriptPubKey = GetFoundationScript();
 
 
         if (pFees)
@@ -532,12 +530,14 @@ void ThreadStakeMiner(CWallet *pwallet)
     {
         while (pwallet->IsLocked())
         {
+	    LogPrintf("Wallet is Locked. Not Staking");
             nLastCoinStakeSearchInterval = 0;
             MilliSleep(1000);
         }
 
         while (vNodes.empty() || IsInitialBlockDownload())
         {
+	    LogPrintf("No Nodes or Initial Block Download. Not Staking");
             nLastCoinStakeSearchInterval = 0;
             fTryToSync = true;
             MilliSleep(1000);
@@ -546,13 +546,15 @@ void ThreadStakeMiner(CWallet *pwallet)
         if (fTryToSync)
         {
             fTryToSync = false;
-            if (vNodes.size() < 3 || pindexBest->GetBlockTime() < GetTime() - 10 * 60)
+            if (vNodes.size() < 1)
             {
+		LogPrintf("No Nodes while Syncing. Not Staking");
                 MilliSleep(60000);
                 continue;
             }
         }
 
+	LogPrintf("Creating New Stake Block");
         //
         // Create new block
         //
