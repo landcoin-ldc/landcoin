@@ -77,7 +77,7 @@ protected:
     vector<unsigned char> vAlertPubKey;
     int nDefaultPort;
     int nRPCPort;
-    int nLastPOWBlock;
+    int nLastPoWBlock;
     CBigNum bnProofOfWorkLimit;
     int nSubsidyHalvingInterval;
     string strDataDir;
