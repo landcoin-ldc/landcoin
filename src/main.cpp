@@ -999,15 +999,19 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 	return bnProofOfStakeLimit;
 }
 
-// block rewards reward
-int64_t GetBlockValue(int64_t nFees)
+int64_t GetPOSReward(int64_t nHeight, int64_t nFees)
 {
-    int64_t nSubsidy = 40000 * COIN;
-
-    if(pindexBest->nHeight == 1)
+	int64_t nSubsidy = 4000 * COIN;
+    	LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
+	return nSubsidy + nFees;
+}
+int64_t GetPOWReward(int64_t nHeight, int64_t nFees)
+{
+    int64_t nSubsidy = 0 * COIN;
+    if(nHeight == 1)
        nSubsidy = 160002000 * COIN;
-    LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
 
+    LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
     return nSubsidy + nFees;
 }
 
@@ -1544,7 +1548,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
     if (IsProofOfWork())
     {
-        int64_t nReward = GetBlockValue(nFees);
+        int64_t nReward = GetPOWReward(pindexBest->nHeight - 1, nFees);
         // Check coinbase reward
         if (vtx[0].GetValueOut() > nReward)
             return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%d vs calculated=%d)",
@@ -1558,7 +1562,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         if (!vtx[1].GetCoinAge(txdb, pindex->pprev, nCoinAge))
             return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
-        int64_t nCalculatedStakeReward = GetBlockValue(nFees);
+        int64_t nCalculatedStakeReward = GetPOSReward(pindexBest->nHeight, nFees);
 
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
@@ -1567,20 +1571,18 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     	if (vtx[1].vout[2].scriptPubKey != GetFoundationScript())
             return DoS(100, error("ConnectBlock() : coinstake does not pay to the charity in the first output"));
 
-        int64_t non_fee = 0;
-        int64_t greencoinAmount = GetBlockValue(non_fee) / 2;
+        int64_t greencoinAmount = GetPOSReward(pindexBest->nHeight, nFees) / 2;
         if (vtx[1].vout[2].nValue < greencoinAmount)
             return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[2].nValue, greencoinAmount));
 
     }
-    else if (IsProofOfWork())
+    else if (IsProofOfWork() && pindexBest->nHeight > 1)
     {
     	//For GreenCoin, first output must go to GreencoinFoundation address
     	if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
             return DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
 
-    	int64_t non_fee = 0;
-    	int64_t greencoinAmount = GetBlockValue(non_fee) / 2;
+    	int64_t greencoinAmount = GetPOWReward(pindexBest->nHeight, nFees) / 2;
     	if (vtx[0].vout[1].nValue < greencoinAmount)
             return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[0].nValue, greencoinAmount));
 
