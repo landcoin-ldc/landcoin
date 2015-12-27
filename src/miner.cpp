@@ -530,14 +530,12 @@ void ThreadStakeMiner(CWallet *pwallet)
     {
         while (pwallet->IsLocked())
         {
-	    LogPrintf("Wallet is Locked. Not Staking");
             nLastCoinStakeSearchInterval = 0;
             MilliSleep(1000);
         }
 
         while (vNodes.empty() || IsInitialBlockDownload())
         {
-	    LogPrintf("No Nodes or Initial Block Download. Not Staking");
             nLastCoinStakeSearchInterval = 0;
             fTryToSync = true;
             MilliSleep(1000);
@@ -548,13 +546,11 @@ void ThreadStakeMiner(CWallet *pwallet)
             fTryToSync = false;
             if (vNodes.size() < 1)
             {
-		LogPrintf("No Nodes while Syncing. Not Staking");
                 MilliSleep(60000);
                 continue;
             }
         }
 
-	LogPrintf("Creating New Stake Block");
         //
         // Create new block
         //
