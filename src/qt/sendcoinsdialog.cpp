@@ -117,6 +117,8 @@ void SendCoinsDialog::on_sendButton_clicked()
     if(!model || !model->getOptionsModel())
         return;
 
+    QString txcomment = ui->editTxComment->text();
+
     QList<SendCoinsRecipient> recipients;
     bool valid = true;
 
@@ -172,9 +174,9 @@ void SendCoinsDialog::on_sendButton_clicked()
     WalletModel::SendCoinsReturn sendstatus;
 
     if (!model->getOptionsModel() || !model->getOptionsModel()->getCoinControlFeatures())
-        sendstatus = model->sendCoins(recipients);
+        sendstatus = model->sendCoins(txcomment, recipients);
     else
-        sendstatus = model->sendCoins(recipients, CoinControlDialog::coinControl);
+        sendstatus = model->sendCoins(txcomment, recipients, CoinControlDialog::coinControl);
 
     switch(sendstatus.status)
     {

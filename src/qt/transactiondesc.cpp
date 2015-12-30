@@ -213,7 +213,7 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx, TransactionReco
     if (wtx.mapValue.count("comment") && !wtx.mapValue["comment"].empty())
         strHTML += "<br><b>" + tr("Comment") + ":</b><br>" + GUIUtil::HtmlEscape(wtx.mapValue["comment"], true) + "<br>";
     if (!wtx.strTxComment.empty())
-        strHTML += "<b>" + tr("Transaction comment") + ":</b><br>" + GUIUtil::HtmlEscape(wtx.strTxComment.c_str(), true) + "<br>";
+        strHTML += "<b>" + tr("Transaction comment") + ":</b><br>" + wtx.strTxComment.c_str() + "<br>";
     strHTML += "<b>" + tr("Transaction ID") + ":</b> " + TransactionRecord::formatSubTxId(wtx.GetHash(), rec->idx) + "<br>";
 
     if (wtx.IsCoinBase() || wtx.IsCoinStake())
