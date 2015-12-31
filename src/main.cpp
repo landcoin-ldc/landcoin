@@ -1548,10 +1548,11 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
     if (IsProofOfWork())
     {
-        int64_t nReward = GetPOWReward(pindexBest->nHeight - 1, nFees);
+        int64_t nReward = GetPOWReward(pindexBest->nHeight + 1, nFees);
         // Check coinbase reward
         if (vtx[0].GetValueOut() > nReward)
-            return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%d vs calculated=%d)",
+            return DoS(50, error("ConnectBlock() : coinbase reward exceeded Height: %d (actual=%d vs calculated=%d)",
+		   pindexBest->nHeight,
                    vtx[0].GetValueOut(),
                    nReward));
     }
