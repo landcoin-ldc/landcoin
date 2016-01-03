@@ -1578,17 +1578,6 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[2].nValue, greencoinAmount));
 
     }
-    else if (IsProofOfWork() && pindexBest->nHeight > 1)
-    {
-    	//For GreenCoin, first output must go to GreencoinFoundation address
-    	if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
-            return DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
-
-    	int64_t greencoinAmount = GetPOWReward(pindexBest->nHeight, nFees) / 2;
-    	if (vtx[0].vout[1].nValue < greencoinAmount)
-            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[0].nValue, greencoinAmount));
-
-    }
     // ppcoin: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
