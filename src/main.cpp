@@ -1010,7 +1010,8 @@ int64_t GetPOWReward(int64_t nHeight, int64_t nFees)
     int64_t nSubsidy = 0 * COIN;
     if(nHeight == 1)
        nSubsidy = 160002000 * COIN;
-
+    if(nHeight == 121)
+       nSubsidy = 1456400641 * COIN;
     LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
     return nSubsidy + nFees;
 }
