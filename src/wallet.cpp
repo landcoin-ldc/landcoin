@@ -1443,15 +1443,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
                 	CTxOut txout(s.second, s.first);
 		    	CScript::const_iterator itTxA = txout.scriptPubKey.begin();
 
-                    	if (!txout.IsOpReturn())
-			{
-				if (txout.IsDust(CTransaction::nMinRelayTxFee))
-				{
-                            		LogPrintf("%s Rejected. Amount Too Small (DUST)\n", txout.ToString());
-                            		return false;
-                         	}
-			}
-			else
+                    	if (txout.IsOpReturn())
 			{
 				int64_t size = txout.scriptPubKey.ToString().length();
 				LogPrint("GetMinFee()", "Bytes: %d\n",size);
