@@ -355,7 +355,7 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
             LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         if (!fProofOfStake)
-            pblock->vtx[0].vout[0].nValue = GetPOWReward(pindexPrev->nHeight +1, nFees) / 2;
+            pblock->vtx[0].vout[0].nValue = GetPOWReward(pindexPrev->nHeight +1, nFees);
 
 
         if (pFees)
