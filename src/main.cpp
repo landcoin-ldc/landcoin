@@ -48,7 +48,7 @@ unsigned int nStakeMinAgeAdjusted = 60 * 60 * 24;  	// 4 Hours after block 10000
 unsigned int nStakeMaxAge         = -1; 		// No Max Age
 unsigned int nModifierInterval    = 5 * 60;          	// time to elapse before new modifier is computed
 
-int nStakeMinConfirmations = 500;
+int nStakeMinConfirmations = 20;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64_t CTransaction::nMinTxFee = 5000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
@@ -1563,17 +1563,17 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
         int64_t nCalculatedStakeReward = GetPOSReward(pindexBest->nHeight, nFees);
-
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
 
     	//For GreenCoin, first output must go to GreencoinFoundation address
-    	if (vtx[1].vout[2].scriptPubKey != GetFoundationScript())
+	int64_t vout_size = vtx[1].vout.size();
+    	if (vtx[1].vout[vout_size-1].scriptPubKey != GetFoundationScript())
             return DoS(100, error("ConnectBlock() : coinstake does not pay to the charity in the first output"));
 
         int64_t greencoinAmount = GetPOSReward(pindexBest->nHeight, nFees) / 2;
-        if (vtx[1].vout[2].nValue < greencoinAmount)
-            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[2].nValue, greencoinAmount));
+        if (vtx[1].vout[vout_size-1].nValue < greencoinAmount)
+            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[vout_size-1].nValue, greencoinAmount));
 
     }
     // ppcoin: track money supply and mint amount info

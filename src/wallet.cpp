@@ -1746,20 +1746,29 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         if (!txNew.GetCoinAge(txdb, pindexPrev, nCoinAge))
             return error("CreateCoinStake : failed to calculate coin age");
 
-        int64_t nReward = GetPOSReward(pindexPrev->nHeight +1, nFees);
+        int64_t nReward = GetPOSReward(pindexPrev->nHeight +1, nFees) / 2;
         if (nReward <= 0)
             return false;
 
         nCredit += nReward;
     }
 
-    //if (nCredit >= GetStakeSplitThreshold())
-    //    txNew.vout.push_back(CTxOut(0, txNew.vout[1].scriptPubKey)); //split stake
+    if (nCredit >= GetStakeSplitThreshold())
+        txNew.vout.push_back(CTxOut(0, txNew.vout[1].scriptPubKey)); //split stake
 
-    txNew.vout.push_back(CTxOut(0, GetFoundationScript()));
+    int vout_len = txNew.vout.size();
     // Set output amount
-    txNew.vout[1].nValue = (nCredit / 2 / CENT) * CENT;
-    txNew.vout[2].nValue = nCredit - txNew.vout[1].nValue;
+    if (txNew.vout.size() == 3)
+    {
+        txNew.vout[1].nValue = (nCredit / 2 / CENT) * CENT;
+        txNew.vout[2].nValue = nCredit - txNew.vout[1].nValue;
+    }
+    else
+        txNew.vout[1].nValue = nCredit;
+
+    // Pay the foundation
+    int64_t nReward = GetPOSReward(pindexPrev->nHeight +1, nFees) / 2;
+    txNew.vout.push_back(CTxOut(nReward, GetFoundationScript()));
 
     // Sign
     int nIn = 0;
