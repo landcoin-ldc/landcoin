@@ -1756,7 +1756,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     if (nCredit >= GetStakeSplitThreshold())
         txNew.vout.push_back(CTxOut(0, txNew.vout[1].scriptPubKey)); //split stake
 
-    int vout_len = txNew.vout.size();
     // Set output amount
     if (txNew.vout.size() == 3)
     {
@@ -1764,11 +1763,9 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         txNew.vout[2].nValue = nCredit - txNew.vout[1].nValue;
     }
     else
+    {
         txNew.vout[1].nValue = nCredit;
-
-    // Pay the foundation
-    int64_t nReward = GetPOSReward(pindexPrev->nHeight +1, nFees) / 2;
-    txNew.vout.push_back(CTxOut(nReward, GetFoundationScript()));
+    }
 
     // Sign
     int nIn = 0;

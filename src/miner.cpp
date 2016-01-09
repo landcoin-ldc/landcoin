@@ -97,8 +97,6 @@ public:
         }
     }
 };
-
-// CreateNewBlock: create new block (without proof-of-work/proof-of-stake)
 CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFees)
 {
     // Create new block
@@ -113,22 +111,23 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
-    txNew.vout.resize(1);
 
-    if (!fProofOfStake)
-    {
+    if (!fProofOfStake) {
+        txNew.vout.resize(1);
         CPubKey pubkey;
         if (!reservekey.GetReservedKey(pubkey))
             return NULL;
         txNew.vout[0].scriptPubKey.SetDestination(pubkey.GetID());
-    }
-    else
-    {
-        // Height first in coinbase required for block.version=2
-        txNew.vin[0].scriptSig = (CScript() << nHeight) + COINBASE_FLAGS;
-        assert(txNew.vin[0].scriptSig.size() <= 100);
+    } else {
+      // Height first in coinbase required for block.version=2
+      txNew.vin[0].scriptSig = (CScript() << nHeight) + COINBASE_FLAGS;
+      assert(txNew.vin[0].scriptSig.size() <= 100);
+      txNew.vout.resize(2);
 
-        txNew.vout[0].SetEmpty();
+      int64_t foundationAmt = 2000 * COIN;
+      txNew.vout[0].SetEmpty();
+      txNew.vout[1].scriptPubKey = GetFoundationScript();
+      txNew.vout[1].nValue = foundationAmt;
     }
 
     // Add our coinbase tx as first transaction

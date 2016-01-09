@@ -46,7 +46,7 @@ unsigned int nTargetSpacing       = 60 * 2;             // 2-minute block spacin
 unsigned int nStakeMinAge         = 60 * 60 * 24;	// 1 hour
 unsigned int nStakeMinAgeAdjusted = 60 * 60 * 24;  	// 4 Hours after block 10000
 unsigned int nStakeMaxAge         = -1; 		// No Max Age
-unsigned int nModifierInterval    = 5 * 60;          	// time to elapse before new modifier is computed
+unsigned int nModifierInterval    = 1;          	// time to elapse before new modifier is computed
 
 int nStakeMinConfirmations = 20;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
@@ -1567,13 +1567,12 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
 
     	//For GreenCoin, first output must go to GreencoinFoundation address
-	int64_t vout_size = vtx[1].vout.size();
-    	if (vtx[1].vout[vout_size-1].scriptPubKey != GetFoundationScript())
+    	if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
             return DoS(100, error("ConnectBlock() : coinstake does not pay to the charity in the first output"));
 
         int64_t greencoinAmount = GetPOSReward(pindexBest->nHeight, nFees) / 2;
-        if (vtx[1].vout[vout_size-1].nValue < greencoinAmount)
-            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[1].vout[vout_size-1].nValue, greencoinAmount));
+        if (vtx[0].vout[1].nValue < greencoinAmount)
+            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[1].nValue, greencoinAmount));
 
     }
     // ppcoin: track money supply and mint amount info
@@ -1997,7 +1996,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     if (IsProofOfStake())
     {
         // Coinbase output should be empty if proof-of-stake block
-        if (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty())
+        if (vtx[0].vout.size() != 2 || !vtx[0].vout[0].IsEmpty())
             return DoS(100, error("CheckBlock() : coinbase output not empty for proof-of-stake block"));
 
         // Second transaction must be coinstake, the rest must not be
