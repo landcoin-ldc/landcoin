@@ -87,6 +87,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xf13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4"));
 
         vSeeds.push_back(CDNSSeedData("greencoin.crypto-expert.com", "greencoin.crypto-expert.com"));
+	vSeeds.push_back(CDNSSeedData("grcdns.infernopool.com", "grcdns.infernopool.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(38);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(85);
