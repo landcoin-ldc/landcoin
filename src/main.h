@@ -49,21 +49,14 @@ static const int64_t MIN_TX_FEE = 0;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 1616548641 * COIN;
+static const int64_t MAX_MONEY = std::numeric_limits<int>::max();
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
+static const int64_t COIN_YEAR_REWARD = 20 * CENT; // 4% per year
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return nTime + 15 * 60;}
 inline unsigned int GetTargetSpacing(int nHeight) { return 120; }
-inline CScript GetFoundationScript()
-{
-	CBitcoinAddress address = "GeJw1g1rgTax56otxkFFsETMvzWFZHETAX";
-	CScript payOutScript;
-	payOutScript.SetDestination(address.Get());
-	return payOutScript;
-}
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
@@ -135,7 +128,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles);
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
 int64_t GetPOWReward(int64_t nHeight, int64_t nFees);
-int64_t GetPOSReward(int64_t nHeight, int64_t nFees);
+int64_t GetPOSReward(int64_t nHeight, int64_t nFees, int64_t nCoinAge);
 unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
 unsigned int ComputeMinStake(unsigned int nBase, int64_t nTime, unsigned int nBlockTime);
 bool IsInitialBlockDownload();

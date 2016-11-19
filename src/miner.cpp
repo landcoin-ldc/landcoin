@@ -111,9 +111,9 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
+    txNew.vout.resize(1);
 
     if (!fProofOfStake) {
-        txNew.vout.resize(1);
         CPubKey pubkey;
         if (!reservekey.GetReservedKey(pubkey))
             return NULL;
@@ -122,12 +122,9 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
       // Height first in coinbase required for block.version=2
       txNew.vin[0].scriptSig = (CScript() << nHeight) + COINBASE_FLAGS;
       assert(txNew.vin[0].scriptSig.size() <= 100);
-      txNew.vout.resize(2);
 
-      int64_t foundationAmt = 2000 * COIN;
       txNew.vout[0].SetEmpty();
-      txNew.vout[1].scriptPubKey = GetFoundationScript();
-      txNew.vout[1].nValue = foundationAmt;
+
     }
 
     // Add our coinbase tx as first transaction
@@ -519,7 +516,7 @@ void ThreadStakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("greencoin-miner");
+    RenameThread("landcoin-miner");
 
     CReserveKey reservekey(pwallet);
 
@@ -557,7 +554,6 @@ void ThreadStakeMiner(CWallet *pwallet)
         auto_ptr<CBlock> pblock(CreateNewBlock(reservekey, true, &nFees));
         if (!pblock.get())
             return;
-
         // Trying to sign a block
         if (pblock->SignBlock(*pwallet, nFees))
         {

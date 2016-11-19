@@ -1,5 +1,5 @@
-greencoin-qt usr/bin
+landcoin-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin80.xpm usr/share/pixmaps
-debian/greencoin-qt.desktop usr/share/applications
-debian/greencoin-qt.protocol usr/share/kde4/services/
+debian/landcoin-qt.desktop usr/share/applications
+debian/landcoin-qt.protocol usr/share/kde4/services/

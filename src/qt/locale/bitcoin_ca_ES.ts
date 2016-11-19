@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GreenCoin</source>
-        <translation>Sobre GreenCoin</translation>
+        <source>About Landcoin</source>
+        <translation>Sobre Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;GreenCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Landcoin&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;Landcoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</source>
+Copyright © 2014 The Landcoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</translation>
+Copyright © 2014 The Landcoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de GreenCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your Landcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de Landcoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a GreenCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça GreenCoin</translation>
+        <source>Sign a message to prove you own a Landcoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça Landcoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça GreenCoin especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified Landcoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça Landcoin especificada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>GreenCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>Landcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Landcoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GreenCoin</source>
-        <translation>Mostra informació sobre GreenCoin</translation>
+        <source>Show information about Landcoin</source>
+        <translation>Mostra informació sobre Landcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a GreenCoin address</source>
-        <translation>Enviar monedes a una adreça GreenCoin</translation>
+        <source>Send coins to a Landcoin address</source>
+        <translation>Enviar monedes a una adreça Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for GreenCoin</source>
-        <translation>Modificar les opcions de configuració per a GreenCoin</translation>
+        <source>Modify configuration options for Landcoin</source>
+        <translation>Modificar les opcions de configuració per a Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>GreenCoin</source>
-        <translation>GreenCoin</translation>
+        <source>Landcoin</source>
+        <translation>Landcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About GreenCoin</source>
-        <translation>&amp;Sobre GreenCoin</translation>
+        <source>&amp;About Landcoin</source>
+        <translation>&amp;Sobre Landcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>GreenCoin client</source>
-        <translation>Client GreenCoin</translation>
+        <source>Landcoin client</source>
+        <translation>Client Landcoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to GreenCoin network</source>
-        <translation><numerusform>%n conexió activa a la xarxa GreenCoin</numerusform><numerusform>%n conexions actives a la xarxa GreenCoin</numerusform></translation>
+        <source>%n active connection(s) to Landcoin network</source>
+        <translation><numerusform>%n conexió activa a la xarxa Landcoin</numerusform><numerusform>%n conexions actives a la xarxa Landcoin</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -596,8 +596,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
-        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça GreenCoin no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Landcoin address or malformed URI parameters.</source>
+        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça Landcoin no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -719,8 +719,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
-        <translation>S&apos;ha produït un error fatal. GreenCoin ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. Landcoin can no longer continue safely and will quit.</source>
+        <translation>S&apos;ha produït un error fatal. Landcoin ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
-        <translation>La direcció introduïda &quot;%1&quot; no és una adreça GreenCoin vàlida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Landcoin address.</source>
+        <translation>La direcció introduïda &quot;%1&quot; no és una adreça Landcoin vàlida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>GreenCoin-Qt</source>
-        <translation>GreenCoin-Qt</translation>
+        <source>Landcoin-Qt</source>
+        <translation>Landcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GreenCoin after logging in to the system.</source>
-        <translation>Inicia automàticament GreenCoin després d&apos;entrar en el sistema.</translation>
+        <source>Automatically start Landcoin after logging in to the system.</source>
+        <translation>Inicia automàticament Landcoin després d&apos;entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GreenCoin on system login</source>
-        <translation>&amp;Iniciar GreenCoin amb l&apos;inici de sessió</translation>
+        <source>&amp;Start Landcoin on system login</source>
+        <translation>&amp;Iniciar Landcoin amb l&apos;inici de sessió</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1160,8 +1160,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client GreenCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the Landcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client Landcoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1190,7 +1190,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Landcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1235,8 +1235,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
-        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar GreenCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Landcoin.</source>
+        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar Landcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1302,8 +1302,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GreenCoin.</source>
-        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar GreenCoin.</translation>
+        <source>This setting will take effect after restarting Landcoin.</source>
+        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar Landcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1321,8 +1321,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa GreenCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Landcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. El seu moneder es sincronitza automàticament amb la xarxa Landcoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1395,7 +1395,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start greencoin: click-to-pay handler</source>
+        <source>Cannot start landcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1563,8 +1563,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
-        <translation>Mostra el missatge d&apos;ajuda de GreenCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres GreenCoin.</translation>
+        <source>Show the Landcoin-Qt help message to get a list with possible Landcoin command-line options.</source>
+        <translation>Mostra el missatge d&apos;ajuda de Landcoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres Landcoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1583,13 +1583,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>GreenCoin - Debug window</source>
-        <translation>GreenCoin - Finestra Depuració</translation>
+        <source>Landcoin - Debug window</source>
+        <translation>Landcoin - Finestra Depuració</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>GreenCoin Core</source>
-        <translation>Nucli GreenCoin</translation>
+        <source>Landcoin Core</source>
+        <translation>Nucli Landcoin</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1598,8 +1598,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració GreenCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the Landcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració Landcoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1608,8 +1608,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the GreenCoin RPC console.</source>
-        <translation>Benvingut a la consola RPC de GreenCoin.</translation>
+        <source>Welcome to the Landcoin RPC console.</source>
+        <translation>Benvingut a la consola RPC de Landcoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1789,8 +1789,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça GreenCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Introdueix una adreça Landcoin (p.ex. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1889,8 +1889,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid GreenCoin address</source>
-        <translation>ADVERTÈNCIA: Direcció GreenCoin invàlida</translation>
+        <source>WARNING: Invalid Landcoin address</source>
+        <translation>ADVERTÈNCIA: Direcció Landcoin invàlida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1922,7 +1922,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address to send the payment to (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1963,8 +1963,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça GreenCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Introdueix una adreça Landcoin (p.ex. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
 </context>
 <context>
@@ -1987,8 +1987,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>L&apos;adreça per a signar el missatge (per exemple B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address to sign the message with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>L&apos;adreça per a signar el missatge (per exemple LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2024,8 +2024,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GreenCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça GreenCoin</translation>
+        <source>Sign the message to prove you own this Landcoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2051,13 +2051,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>La direcció que va ser signada amb un missatge (per exemple B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address the message was signed with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>La direcció que va ser signada amb un missatge (per exemple LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça GreenCoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified Landcoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça Landcoin especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2067,8 +2067,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introdueix una adreça GreenCoin (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Introdueix una adreça Landcoin (p.ex. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2077,8 +2077,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GreenCoin signature</source>
-        <translation>Introduïu la signatura GreenCoin</translation>
+        <source>Enter Landcoin signature</source>
+        <translation>Introduïu la signatura Landcoin</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2656,8 +2656,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>GreenCoin version</source>
-        <translation>versió GreenCoin</translation>
+        <source>Landcoin version</source>
+        <translation>versió Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2666,8 +2666,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or greencoind</source>
-        <translation>Enviar comandes a -server o greencoind</translation>
+        <source>Send command to -server or landcoind</source>
+        <translation>Enviar comandes a -server o landcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2686,13 +2686,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: greencoin.conf)</source>
-        <translation>Especifiqueu el fitxer de configuració (per defecte: greencoin.conf)</translation>
+        <source>Specify configuration file (default: landcoin.conf)</source>
+        <translation>Especifiqueu el fitxer de configuració (per defecte: landcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: greencoind.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: greencoind.pid)</translation>
+        <source>Specify pid file (default: landcoind.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: landcoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2709,13 +2709,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Landcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2821,8 +2821,8 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
-        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni GreenCoin no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Landcoin will not work properly.</source>
+        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni Landcoin no funcionarà correctament.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3117,7 +3117,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
+        <source>Initialization sanity check failed. Landcoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3172,13 +3172,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
-        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de GreenCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Landcoin</source>
+        <translation>Error en carregar wallet.dat: El moneder requereix la versió més recent de Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
-        <translation>El moneder necessita ser reescrita: reiniciar GreenCoin per completar</translation>
+        <source>Wallet needed to be rewritten: restart Landcoin to complete</source>
+        <translation>El moneder necessita ser reescrita: reiniciar Landcoin per completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3237,8 +3237,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. GreenCoin probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. Landcoin is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. Landcoin probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3272,7 +3272,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Landcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

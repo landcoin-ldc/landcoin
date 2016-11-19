@@ -1,6 +1,6 @@
 [Protocol]
-exec=greencoin-qt '%u'
-protocol=greencoin
+exec=landcoin-qt '%u'
+protocol=landcoin
 input=none
 output=none
 helper=true

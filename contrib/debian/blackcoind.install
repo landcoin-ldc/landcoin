@@ -1,2 +1,2 @@
-debian/bin/greencoind usr/bin
-src/greencoind usr/lib/greencoin
+debian/bin/landcoind usr/bin
+src/landcoind usr/lib/landcoin

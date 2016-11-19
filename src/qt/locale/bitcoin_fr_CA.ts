@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GreenCoin</source>
-        <translation>Au sujet de GreenCoin</translation>
+        <source>About Landcoin</source>
+        <translation>Au sujet de Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
-        <translation>Version de &lt;b&gt;GreenCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Landcoin&lt;/b&gt; version</source>
+        <translation>Version de &lt;b&gt;Landcoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</source>
+Copyright © 2014 The Landcoin developers</source>
         <translation>Copyright © 2009-2014 Les développeurs Bitcoin
 Copyright © 2012-2014 Les développeurs NovaCoin
-Copyright © 2014 Les développeurs GreenCoin</translation>
+Copyright © 2014 Les développeurs Landcoin</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,7 +60,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Landcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Ce sont vos adresses pour recevoir vos paiements. Vous pouvez utiliser une adresse différente pour chaque réception afin d&apos;identifier facilement le payeur.</translation>
     </message>
     <message>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a GreenCoin address</source>
-        <translation>Signer un message afin de valider l&apos;identité de votre adresse GreenCoin</translation>
+        <source>Sign a message to prove you own a Landcoin address</source>
+        <translation>Signer un message afin de valider l&apos;identité de votre adresse Landcoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse GreenCoin spécifique.</translation>
+        <source>Verify a message to ensure it was signed with a specified Landcoin address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse Landcoin spécifique.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -227,7 +227,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>ATTENTION : Si vous cryptez votre portefeuille et perdez votre passphrase, vous ne pourrez plus accéder à vos GreenCoins</translation>
+        <translation>ATTENTION : Si vous cryptez votre portefeuille et perdez votre passphrase, vous ne pourrez plus accéder à vos Landcoins</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>L&apos;application GreenCoin va désormais se terminer afin de finaliser le processus de cryptage. Merci de noter que le cryptage du portefeuille ne garantit pas de se prémunir du vol via l&apos;utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
+        <source>Landcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>L&apos;application Landcoin va désormais se terminer afin de finaliser le processus de cryptage. Merci de noter que le cryptage du portefeuille ne garantit pas de se prémunir du vol via l&apos;utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GreenCoin</source>
-        <translation>Afficher des informations au sujet du GreenCoin</translation>
+        <source>Show information about Landcoin</source>
+        <translation>Afficher des informations au sujet du Landcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a GreenCoin address</source>
-        <translation>Envoyer des monnaies vers une adresse GreenCoin</translation>
+        <source>Send coins to a Landcoin address</source>
+        <translation>Envoyer des monnaies vers une adresse Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for GreenCoin</source>
-        <translation>Modification des options de configuration de GreenCoin</translation>
+        <source>Modify configuration options for Landcoin</source>
+        <translation>Modification des options de configuration de Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>GreenCoin</source>
-        <translation>GreenCoin</translation>
+        <source>Landcoin</source>
+        <translation>Landcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About GreenCoin</source>
-        <translation>A propos de GreenCoin</translation>
+        <source>&amp;About Landcoin</source>
+        <translation>A propos de Landcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>GreenCoin client</source>
-        <translation>Client GreenCoin</translation>
+        <source>Landcoin client</source>
+        <translation>Client Landcoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to GreenCoin network</source>
-        <translation><numerusform>%n connexion active au réseau GreenCoin</numerusform><numerusform>%n connexions actives au réseau GreenCoin</numerusform></translation>
+        <source>%n active connection(s) to Landcoin network</source>
+        <translation><numerusform>%n connexion active au réseau Landcoin</numerusform><numerusform>%n connexions actives au réseau Landcoin</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresse : %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
-        <translation>L&apos;adresse du portefeuille GreenCoin n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Landcoin address or malformed URI parameters.</source>
+        <translation>L&apos;adresse du portefeuille Landcoin n&apos;as pas pu être correctement identifiée, car invalide ou malformée.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,8 +723,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a été rencontrée. L&apos;application GreenCoin ne peut plus être s&apos;exécuter de façon correcte et doit se terminer.</translation>
+        <source>A fatal error occurred. Landcoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a été rencontrée. L&apos;application Landcoin ne peut plus être s&apos;exécuter de façon correcte et doit se terminer.</translation>
     </message>
 </context>
 <context>
@@ -1057,8 +1057,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
-        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse GreenCoin valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Landcoin address.</source>
+        <translation>L&apos;adresse &quot;%1&quot; renseignée n&apos;est pas une adresse Landcoin valide.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>GreenCoin-Qt</source>
-        <translation>GreenCoin-Qt</translation>
+        <source>Landcoin-Qt</source>
+        <translation>Landcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GreenCoin after logging in to the system.</source>
-        <translation>Démarrage automatique du client GreenCoin lors de la connexion au système</translation>
+        <source>Automatically start Landcoin after logging in to the system.</source>
+        <translation>Démarrage automatique du client Landcoin lors de la connexion au système</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GreenCoin on system login</source>
-        <translation>&amp;Démarrage du client GreenCoin à la connexion au système</translation>
+        <source>&amp;Start Landcoin on system login</source>
+        <translation>&amp;Démarrage du client Landcoin à la connexion au système</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouverture automatique du port client de GreenCoin sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
+        <source>Automatically open the Landcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouverture automatique du port client de Landcoin sur le routeur. Ceci ne fonctionne que dans le cas où le support UPnP sur votre routeur existe et est actif.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1194,7 +1194,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Landcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1239,8 +1239,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
-        <translation>La langue d&apos;interface de de l&apos;utilisateur peut être définie ici. Ces modification seront effectives après redémarrage de l&apos;application GreenCoin</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Landcoin.</source>
+        <translation>La langue d&apos;interface de de l&apos;utilisateur peut être définie ici. Ces modification seront effectives après redémarrage de l&apos;application Landcoin</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1306,8 +1306,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GreenCoin.</source>
-        <translation>Les paramètres prendront effet après redémarrage du client GreenCoin</translation>
+        <source>This setting will take effect after restarting Landcoin.</source>
+        <translation>Les paramètres prendront effet après redémarrage du client Landcoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1325,8 +1325,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau GreenCoin mais ce processus n&apos;est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Landcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées peuvent être obsolètes. Votre portefeuille se synchronise automatiquement avec le réseau Landcoin mais ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1399,7 +1399,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start greencoin: click-to-pay handler</source>
+        <source>Cannot start landcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1567,8 +1567,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
-        <translation>Afficher le message d&apos;aide GreenCoin-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande GreenCoin</translation>
+        <source>Show the Landcoin-Qt help message to get a list with possible Landcoin command-line options.</source>
+        <translation>Afficher le message d&apos;aide Landcoin-Qt afin d&apos;obtenir la liste des options de de L&apos;outil en ligne de commande Landcoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1587,13 +1587,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="-104"/>
-        <source>GreenCoin - Debug window</source>
-        <translation>GreenCoin - Fenêtre de déboggage</translation>
+        <source>Landcoin - Debug window</source>
+        <translation>Landcoin - Fenêtre de déboggage</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>GreenCoin Core</source>
-        <translation>GreenCoin Core</translation>
+        <source>Landcoin Core</source>
+        <translation>Landcoin Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1602,8 +1602,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier journal de debug GreenCoin au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
+        <source>Open the Landcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ouvrir le fichier journal de debug Landcoin au sein du répertoire courant. Cette opération peut prendre quelques secondes dans le cas de fichiers journaux volumineux.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1612,8 +1612,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the GreenCoin RPC console.</source>
-        <translation>Bienvenue sur la console GreenCoin RPC.</translation>
+        <source>Welcome to the Landcoin RPC console.</source>
+        <translation>Bienvenue sur la console Landcoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1793,8 +1793,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse GreenCoin (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Entrer une adresse Landcoin (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1893,8 +1893,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid GreenCoin address</source>
-        <translation>AVERTISSEMENT: Adresse GreenCoin Invalide</translation>
+        <source>WARNING: Invalid Landcoin address</source>
+        <translation>AVERTISSEMENT: Adresse Landcoin Invalide</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1904,7 +1904,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location line="+4"/>
         <source>WARNING: unknown change address</source>
-        <translation>AVERTISSEMET: Adresse GreenCoin Invalide</translation>
+        <translation>AVERTISSEMET: Adresse Landcoin Invalide</translation>
     </message>
 </context>
 <context>
@@ -1926,7 +1926,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address to send the payment to (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1967,8 +1967,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse GreenCoin (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Entrer une adresse Landcoin (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
 </context>
 <context>
@@ -1991,8 +1991,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse GreenCoin (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address to sign the message with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Entrer une adresse Landcoin (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2028,8 +2028,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GreenCoin address</source>
-        <translation>Signer le message afin de prouver l&apos;identité de votre adresse GreenCoin</translation>
+        <source>Sign the message to prove you own this Landcoin address</source>
+        <translation>Signer le message afin de prouver l&apos;identité de votre adresse Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2055,13 +2055,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>L&apos;adresse avec laquelle le message à été signé (ex: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address the message was signed with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>L&apos;adresse avec laquelle le message à été signé (ex: LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse GreenCoin spécifique.</translation>
+        <source>Verify the message to ensure it was signed with the specified Landcoin address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il vient d&apos;un adresse Landcoin spécifique.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2071,8 +2071,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Entrer une adresse GreenCoin (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Entrer une adresse Landcoin (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2081,8 +2081,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GreenCoin signature</source>
-        <translation>Entrer une signature GreenCoin</translation>
+        <source>Enter Landcoin signature</source>
+        <translation>Entrer une signature Landcoin</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2660,8 +2660,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>GreenCoin version</source>
-        <translation>Version GreenCoin</translation>
+        <source>Landcoin version</source>
+        <translation>Version Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2670,8 +2670,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or greencoind</source>
-        <translation>Envoyer commande à -server ou greencoind</translation>
+        <source>Send command to -server or landcoind</source>
+        <translation>Envoyer commande à -server ou landcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2690,13 +2690,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: greencoin.conf)</source>
-        <translation>Spécifier le fichier de configuration (defaut: greencoin.conf)</translation>
+        <source>Specify configuration file (default: landcoin.conf)</source>
+        <translation>Spécifier le fichier de configuration (defaut: landcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: greencoind.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: greencoind.pid)
+        <source>Specify pid file (default: landcoind.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: landcoind.pid)
 </translation>
     </message>
     <message>
@@ -2714,13 +2714,13 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Landcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2826,8 +2826,8 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. GreenCoin ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Landcoin will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. Landcoin ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3121,7 +3121,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
+        <source>Initialization sanity check failed. Landcoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3176,13 +3176,13 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
-        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application GreenCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Landcoin</source>
+        <translation>Erreur de chargement du fichier wallet.dat: le portefeuille nécessite une version plus récente de l&apos;application Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
-        <translation>le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application GreenCoin</translation>
+        <source>Wallet needed to be rewritten: restart Landcoin to complete</source>
+        <translation>le portefeuille nécessite d&apos;être réédité : Merci de relancer l&apos;application Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3241,8 +3241,8 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
-        <translation>Connexion au port %s impossible. L&apos;application GreenCoin est probablement déjà en cours d&apos;exécution</translation>
+        <source>Unable to bind to %s on this computer. Landcoin is probably already running.</source>
+        <translation>Connexion au port %s impossible. L&apos;application Landcoin est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3276,7 +3276,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Landcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

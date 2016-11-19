@@ -50,12 +50,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("GreenCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Landcoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  greencoind [options]                     " + "\n" +
-                  "  greencoind [options] <command> [params]  " + _("Send command to -server or greencoind") + "\n" +
-                  "  greencoind [options] help                " + _("List commands") + "\n" +
-                  "  greencoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  landcoind [options]                     " + "\n" +
+                  "  landcoind [options] <command> [params]  " + _("Send command to -server or landcoind") + "\n" +
+                  "  landcoind [options] help                " + _("List commands") + "\n" +
+                  "  landcoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "greencoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "landcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)

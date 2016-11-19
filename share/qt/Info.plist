@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>GreenCoin-Qt</string>
+	<string>Landcoin-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>GreenCoin-Qt</string>
+	<string>Landcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.greencoin.GreenCoin-Qt</string>
+	<string>co.landcoin.Landcoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.greencoin.GreenCoinPayment</string>
+            <string>co.landcoin.LandcoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>greencoin</string>
+              <string>landcoin</string>
             </array>
           </dict>
         </array>

@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GreenCoin</source>
-        <translation>Tentang GreenCoin</translation>
+        <source>About Landcoin</source>
+        <translation>Tentang Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;GreenCoin&lt;/b&gt; versi</translation>
+        <source>&lt;b&gt;Landcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Landcoin&lt;/b&gt; versi</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</source>
+Copyright © 2014 The Landcoin developers</source>
         <translation>Copyright © 2009-2014 para pengembang Bitcoin
 Copyright © 2012-2014 para pengembang NovaCoin
-Copyright © 2014 para pengembang GreenCoin</translation>
+Copyright © 2014 para pengembang Landcoin</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ini adalah alamat GreenCoin Anda untuk menerima pembayaran. Anda dapat memberikan alamat yang berbeda untuk setiap pengirim, sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
+        <source>These are your Landcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Ini adalah alamat Landcoin Anda untuk menerima pembayaran. Anda dapat memberikan alamat yang berbeda untuk setiap pengirim, sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a GreenCoin address</source>
-        <translation>Masukan  pesan untuk membuktikan bahwa anda telah mempunyai adress GreenCoin</translation>
+        <source>Sign a message to prove you own a Landcoin address</source>
+        <translation>Masukan  pesan untuk membuktikan bahwa anda telah mempunyai adress Landcoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,7 +90,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Landcoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>GreenCoin akan ditutup untuk menyelesaikan proses enkripsi. Ingat bahwa dompet Anda tidak bisa di lindungi dengan enkripsi sepenuhny dari pencurian melalui infeksi malware di komputer Anda.</translation>
+        <source>Landcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Landcoin akan ditutup untuk menyelesaikan proses enkripsi. Ingat bahwa dompet Anda tidak bisa di lindungi dengan enkripsi sepenuhny dari pencurian melalui infeksi malware di komputer Anda.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GreenCoin</source>
-        <translation>Tunjukkan informasi tentang GreenCoin</translation>
+        <source>Show information about Landcoin</source>
+        <translation>Tunjukkan informasi tentang Landcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a GreenCoin address</source>
-        <translation>Kirim koin ke alamat GreenCoin</translation>
+        <source>Send coins to a Landcoin address</source>
+        <translation>Kirim koin ke alamat Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for GreenCoin</source>
-        <translation>Memodifikasi opsi aturan untuk GreenCoin</translation>
+        <source>Modify configuration options for Landcoin</source>
+        <translation>Memodifikasi opsi aturan untuk Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>GreenCoin</source>
-        <translation>GreenCoin (CoinHitam)</translation>
+        <source>Landcoin</source>
+        <translation>Landcoin (CoinHitam)</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About GreenCoin</source>
-        <translation>&amp;Tentang GreenCoin</translation>
+        <source>&amp;About Landcoin</source>
+        <translation>&amp;Tentang Landcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>GreenCoin client</source>
-        <translation>Klien GreenCoin</translation>
+        <source>Landcoin client</source>
+        <translation>Klien Landcoin</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to GreenCoin network</source>
+        <source>%n active connection(s) to Landcoin network</source>
         <translation type="unfinished"><numerusform></numerusform></translation>
     </message>
     <message>
@@ -600,7 +600,7 @@ Alamat: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Landcoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -723,7 +723,7 @@ Alamat: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Landcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1043,7 +1043,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Landcoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1062,8 +1062,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>GreenCoin-Qt</source>
-        <translation>GreenCoin-Qt</translation>
+        <source>Landcoin-Qt</source>
+        <translation>Landcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1135,12 +1135,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GreenCoin after logging in to the system.</source>
+        <source>Automatically start Landcoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GreenCoin on system login</source>
+        <source>&amp;Start Landcoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1150,7 +1150,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Landcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1180,7 +1180,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Landcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1225,7 +1225,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Landcoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1292,7 +1292,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GreenCoin.</source>
+        <source>This setting will take effect after restarting Landcoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1311,7 +1311,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Landcoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1385,7 +1385,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start greencoin: click-to-pay handler</source>
+        <source>Cannot start landcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1553,7 +1553,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
+        <source>Show the Landcoin-Qt help message to get a list with possible Landcoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,13 +1573,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>GreenCoin - Debug window</source>
+        <source>Landcoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>GreenCoin Core</source>
-        <translation>Inti GreenCoin</translation>
+        <source>Landcoin Core</source>
+        <translation>Inti Landcoin</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1588,7 +1588,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Landcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1598,7 +1598,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the GreenCoin RPC console.</source>
+        <source>Welcome to the Landcoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1779,7 +1779,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1879,7 +1879,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid GreenCoin address</source>
+        <source>WARNING: Invalid Landcoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1912,7 +1912,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address to send the payment to (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1953,7 +1953,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1977,7 +1977,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address to sign the message with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2014,7 +2014,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GreenCoin address</source>
+        <source>Sign the message to prove you own this Landcoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2041,12 +2041,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address the message was signed with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Landcoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2057,7 +2057,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2067,7 +2067,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GreenCoin signature</source>
+        <source>Enter Landcoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2646,7 +2646,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>GreenCoin version</source>
+        <source>Landcoin version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2656,7 +2656,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or greencoind</source>
+        <source>Send command to -server or landcoind</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2676,12 +2676,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: greencoin.conf)</source>
+        <source>Specify configuration file (default: landcoin.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: greencoind.pid)</source>
+        <source>Specify pid file (default: landcoind.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2699,13 +2699,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Landcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2811,7 +2811,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Landcoin will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3106,7 +3106,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
+        <source>Initialization sanity check failed. Landcoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3161,12 +3161,12 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Landcoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Landcoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3226,7 +3226,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Landcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3261,7 +3261,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Landcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

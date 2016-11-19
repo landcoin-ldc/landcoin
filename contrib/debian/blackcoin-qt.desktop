@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=GreenCoin
-Comment=GreenCoin P2P Cryptocurrency
-Comment[fr]=GreenCoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=GreenCoin, eşten eşe kriptografik sanal para birimi
-Exec=/usr/bin/greencoin-qt
+Name=Landcoin
+Comment=Landcoin P2P Cryptocurrency
+Comment[fr]=Landcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Landcoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/landcoin-qt
 Terminal=false
 Type=Application
 Icon=/usr/share/pixmaps/bitcoin80.xpm
-MimeType=x-scheme-handler/greencoin;
+MimeType=x-scheme-handler/landcoin;
 Categories=Office;

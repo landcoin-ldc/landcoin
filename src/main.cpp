@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "GreenCoin cannot be compiled without assertions."
+# error "Landcoin cannot be compiled without assertions."
 #endif
 
 //
@@ -43,18 +43,18 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 12);
 unsigned int nStakeTargetSpacing  = 60 * 2; 		// 2-minute block spacing
 unsigned int nTargetSpacing       = 60 * 2;             // 2-minute block spacing
-unsigned int nStakeMinAge         = 60 * 60 * 24;	// 1 hour
-unsigned int nStakeMinAgeAdjusted = 60 * 60 * 24;  	// 4 Hours after block 10000
+unsigned int nStakeMinAge         = 8 * 60 * 24;	// 8 hours
+unsigned int nStakeMinAgeAdjusted = 8 * 60 * 24;  	// 1 Hour after block 10000
 unsigned int nStakeMaxAge         = -1; 		// No Max Age
 unsigned int nModifierInterval    = 5 * 60;          	// time to elapse before new modifier is computed
 
-int nStakeMinConfirmations = 20;
+int nStakeMinConfirmations = 50;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 int64_t CTransaction::nMinTxFee = 5000000;  // Override with -mintxfee
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
 int64_t CTransaction::nMinRelayTxFee = 20000;
 
-int nCoinbaseMaturity = 20;
+int nCoinbaseMaturity = 50;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -85,7 +85,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "GreenCoin Signed Message:\n";
+const string strMessageMagic = "Landcoin Signed Message:\n";
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -999,22 +999,23 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 	return bnProofOfStakeLimit;
 }
 
-int64_t GetPOSReward(int64_t nHeight, int64_t nFees)
+int64_t GetPOSReward(int64_t nHeight, int64_t nFees, int64_t nCoinAge)
 {
-	int64_t nSubsidy = 4000 * COIN;
+	int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
     	LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
 	return nSubsidy + nFees;
 }
+
 int64_t GetPOWReward(int64_t nHeight, int64_t nFees)
 {
     int64_t nSubsidy = 0 * COIN;
     if(nHeight == 1)
-       nSubsidy = 1616548641 * COIN;
+       nSubsidy = 19000000000 * COIN;
     LogPrint("creation", "GetBlockValue() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
     return nSubsidy + nFees;
 }
 
-static const int64_t nTargetTimespan = 0.16 * 24 * 60 * 60;  // 4-hour
+static const int64_t nTargetTimespan = 8 * 60 * 60;
 static const int64_t nTargetSpacingWorkMax = 12 * nStakeTargetSpacing; // 2-hour
 
 // maximum nBits value could possible be required nTime after
@@ -1562,18 +1563,9 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         if (!vtx[1].GetCoinAge(txdb, pindex->pprev, nCoinAge))
             return error("ConnectBlock() : %s unable to get coin age for coinstake", vtx[1].GetHash().ToString());
 
-        int64_t nCalculatedStakeReward = GetPOSReward(pindexBest->nHeight, nFees);
+        int64_t nCalculatedStakeReward = GetPOSReward(pindexBest->nHeight, nFees, nCoinAge);
         if (nStakeReward > nCalculatedStakeReward)
             return DoS(100, error("ConnectBlock() : coinstake pays too much(actual=%d vs calculated=%d)", nStakeReward, nCalculatedStakeReward));
-
-    	//For GreenCoin, first output must go to GreencoinFoundation address
-    	if (vtx[0].vout[1].scriptPubKey != GetFoundationScript())
-            return DoS(100, error("ConnectBlock() : coinstake does not pay to the charity in the first output"));
-
-        int64_t greencoinAmount = GetPOSReward(pindexBest->nHeight, nFees) / 2;
-        if (vtx[0].vout[1].nValue < greencoinAmount)
-            return DoS(100, error("ConnectBlock() : coinbase does not pay enough to the charity (actual=%d vs required=%d)", vtx[0].vout[1].nValue, greencoinAmount));
-
     }
     // ppcoin: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
@@ -1996,7 +1988,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     if (IsProofOfStake())
     {
         // Coinbase output should be empty if proof-of-stake block
-        if (vtx[0].vout.size() != 2 || !vtx[0].vout[0].IsEmpty())
+        if (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty())
             return DoS(100, error("CheckBlock() : coinbase output not empty for proof-of-stake block"));
 
         // Second transaction must be coinstake, the rest must not be
@@ -2667,7 +2659,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("greencoin-loadblk");
+    RenameThread("landcoin-loadblk");
 
     CImportingNow imp;
 

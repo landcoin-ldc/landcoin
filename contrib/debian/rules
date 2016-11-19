@@ -5,29 +5,29 @@
 #build/bitcoind::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitcoin)
 
-DEB_INSTALL_EXAMPLES_greencoind += debian/examples/*
-DEB_INSTALL_MANPAGES_greencoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_landcoind += debian/examples/*
+DEB_INSTALL_MANPAGES_landcoind += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix greencoind
+	cd src; $(MAKE) -f makefile.unix landcoind
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f greencoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f landcoin-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake greencoin-qt.pro USE_QRCODE=1
+	qmake landcoin-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_greencoin
-	src/test_greencoin
+	cd src; $(MAKE) -f makefile.unix test_landcoin
+	src/test_landcoin
 
 # Ensure wrapper is set executable
-binary-post-install/greencoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/greencoind
-binary-post-install/greencoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/greencoin-qt
+binary-post-install/landcoind:
+	chmod +x $(cdbs_curdestdir)usr/bin/landcoind
+binary-post-install/landcoin-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/landcoin-qt

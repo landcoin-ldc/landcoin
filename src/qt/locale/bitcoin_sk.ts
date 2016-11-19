@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GreenCoin</source>
-        <translation>O GreenCoin</translation>
+        <source>About Landcoin</source>
+        <translation>O Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;GreenCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Landcoin&lt;/b&gt; version</source>
+        <translation>Verzia &lt;b&gt;Landcoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</source>
+Copyright © 2014 The Landcoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</translation>
+Copyright © 2014 The Landcoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše GreenCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your Landcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše Landcoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a GreenCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto GreenCoin adresu</translation>
+        <source>Sign a message to prove you own a Landcoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Landcoin adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou GreenCoin adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified Landcoin address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Landcoin adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+82"/>
-        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>GreenCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <source>Landcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Landcoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -357,8 +357,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GreenCoin</source>
-        <translation>Zobraziť informácie o GreenCoin</translation>
+        <source>Show information about Landcoin</source>
+        <translation>Zobraziť informácie o Landcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,13 +397,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a GreenCoin address</source>
-        <translation>Poslať mince na GreenCoin adresu</translation>
+        <source>Send coins to a Landcoin address</source>
+        <translation>Poslať mince na Landcoin adresu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for GreenCoin</source>
-        <translation>Upraviť možnosti konfigurácie pre GreenCoin</translation>
+        <source>Modify configuration options for Landcoin</source>
+        <translation>Upraviť možnosti konfigurácie pre Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -443,8 +443,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>GreenCoin</source>
-        <translation>GreenCoin</translation>
+        <source>Landcoin</source>
+        <translation>Landcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -453,8 +453,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About GreenCoin</source>
-        <translation>&amp;O GreenCoin</translation>
+        <source>&amp;About Landcoin</source>
+        <translation>&amp;O Landcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>GreenCoin client</source>
-        <translation>GreenCoin klient</translation>
+        <source>Landcoin client</source>
+        <translation>Landcoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to GreenCoin network</source>
-        <translation><numerusform>%n aktívne spojenie s GreenCoin sieťov</numerusform><numerusform>%n aktívnych spojení s GreenCoin sieťov</numerusform><numerusform>%n aktívnych spojení s GreenCoin sieťou</numerusform></translation>
+        <source>%n active connection(s) to Landcoin network</source>
+        <translation><numerusform>%n aktívne spojenie s Landcoin sieťov</numerusform><numerusform>%n aktívnych spojení s Landcoin sieťov</numerusform><numerusform>%n aktívnych spojení s Landcoin sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -604,8 +604,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou GreenCoin adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Landcoin address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Landcoin adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -727,8 +727,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. GreenCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. Landcoin can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. Landcoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1061,8 +1061,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou GreenCoin adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Landcoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou Landcoin adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1080,8 +1080,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>GreenCoin-Qt</source>
-        <translation>GreenCoin-Qt</translation>
+        <source>Landcoin-Qt</source>
+        <translation>Landcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1153,13 +1153,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GreenCoin after logging in to the system.</source>
-        <translation>Automaticky spustiť GreenCoin po prihlásení sa do systému.</translation>
+        <source>Automatically start Landcoin after logging in to the system.</source>
+        <translation>Automaticky spustiť Landcoin po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GreenCoin on system login</source>
-        <translation>&amp;Spustiť GreenCoin pri prihlásení do systému</translation>
+        <source>&amp;Start Landcoin on system login</source>
+        <translation>&amp;Spustiť Landcoin pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1168,8 +1168,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta GreenCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the Landcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta Landcoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1198,8 +1198,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojiť k sieti GreenCoin cez SOCKS5 proxy (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the Landcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojiť k sieti Landcoin cez SOCKS5 proxy (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1243,8 +1243,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní GreenCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Landcoin.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Landcoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1310,8 +1310,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GreenCoin.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní GreenCoin.</translation>
+        <source>This setting will take effect after restarting Landcoin.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní Landcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1329,8 +1329,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou GreenCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Landcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Landcoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1403,8 +1403,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start greencoin: click-to-pay handler</source>
-        <translation>GreenCoin sa nedá spustiť: click-to-pay handler</translation>
+        <source>Cannot start landcoin: click-to-pay handler</source>
+        <translation>Landcoin sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1571,8 +1571,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
-        <translation>Zobraziť GreenCoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku GreenCoin.</translation>
+        <source>Show the Landcoin-Qt help message to get a list with possible Landcoin command-line options.</source>
+        <translation>Zobraziť Landcoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku Landcoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1591,13 +1591,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>GreenCoin - Debug window</source>
-        <translation>GreenCoin - Ladiace okno</translation>
+        <source>Landcoin - Debug window</source>
+        <translation>Landcoin - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>GreenCoin Core</source>
-        <translation>Jadro GreenCoin</translation>
+        <source>Landcoin Core</source>
+        <translation>Jadro Landcoin</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1606,8 +1606,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte Greencoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the Landcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte Landcoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1616,8 +1616,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the GreenCoin RPC console.</source>
-        <translation>Vitajte v konzole Greencoin RPC.</translation>
+        <source>Welcome to the Landcoin RPC console.</source>
+        <translation>Vitajte v konzole Landcoin RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1797,8 +1797,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte GreenCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Zadajte Landcoin adresu (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1897,8 +1897,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid GreenCoin address</source>
-        <translation>UPOZORNENIE: Neplatná GreenCoin adresa</translation>
+        <source>WARNING: Invalid Landcoin address</source>
+        <translation>UPOZORNENIE: Neplatná Landcoin adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1930,8 +1930,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Adresa pre poslanie platby (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address to send the payment to (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Adresa pre poslanie platby (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1971,8 +1971,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte GreenCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Zadajte Landcoin adresu (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
 </context>
 <context>
@@ -1995,8 +1995,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Adresa na podpísanie správy (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address to sign the message with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Adresa na podpísanie správy (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2032,8 +2032,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GreenCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto GreenCoin adresu</translation>
+        <source>Sign the message to prove you own this Landcoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Landcoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2059,13 +2059,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Adresa správy bola podpísaná (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address the message was signed with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Adresa správy bola podpísaná (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou GreenCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Landcoin address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Landcoin adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2075,8 +2075,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte GreenCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Zadajte Landcoin adresu (napr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2085,8 +2085,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GreenCoin signature</source>
-        <translation>Zadajte GreenCoin podpis</translation>
+        <source>Enter Landcoin signature</source>
+        <translation>Zadajte Landcoin podpis</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2664,8 +2664,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>GreenCoin version</source>
-        <translation>Verzia GreenCoin</translation>
+        <source>Landcoin version</source>
+        <translation>Verzia Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2674,8 +2674,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or greencoind</source>
-        <translation>Pošli príkaz na -server alebo greencoind</translation>
+        <source>Send command to -server or landcoind</source>
+        <translation>Pošli príkaz na -server alebo landcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2694,13 +2694,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: greencoin.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: greencoin.conf)</translation>
+        <source>Specify configuration file (default: landcoin.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: landcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: greencoind.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: greencoind.pid)</translation>
+        <source>Specify pid file (default: landcoind.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: landcoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2717,24 +2717,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Landcoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodne heslo:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami &quot;môže čítať iba vlastník&quot;.
 Odporúča sa tiež nastaviť &quot;alertnotify&quot;, takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;Landcoin upozornenie&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2839,8 +2839,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny GreenCoin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Landcoin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny Landcoin nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3134,8 +3134,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
-        <translation>Úvodné kontrolné testy zlyhali. GreenCoin sa teraz zatvori.</translation>
+        <source>Initialization sanity check failed. Landcoin is shutting down.</source>
+        <translation>Úvodné kontrolné testy zlyhali. Landcoin sa teraz zatvori.</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -3189,13 +3189,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu GreenCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Landcoin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte GreenCoin k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart Landcoin to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Landcoin k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3254,8 +3254,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. GreenCoin je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. Landcoin is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Landcoin je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3289,8 +3289,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;GreenCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. GreenCoin je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. Landcoin is probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. Landcoin je pravdepodobne už spustený</translation>
     </message>
     <message>
         <location line="+4"/>

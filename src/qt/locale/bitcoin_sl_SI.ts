@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About GreenCoin</source>
-        <translation>O GreenCoin</translation>
+        <source>About Landcoin</source>
+        <translation>O Landcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;GreenCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;GreenCoin&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;Landcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Landcoin&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The GreenCoin developers</source>
+Copyright © 2014 The Landcoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -58,8 +58,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your GreenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši GreenCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your Landcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši Landcoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -73,8 +73,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a GreenCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva GreenCoin naslova</translation>
+        <source>Sign a message to prove you own a Landcoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva Landcoin naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -88,8 +88,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified GreenCoin address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim GreenCoin naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified Landcoin address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim Landcoin naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -256,8 +256,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>GreenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>GreenCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>Landcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Landcoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -350,8 +350,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about GreenCoin</source>
-        <translation>Pokaži informacije o GreenCoin</translation>
+        <source>Show information about Landcoin</source>
+        <translation>Pokaži informacije o Landcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -390,13 +390,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a GreenCoin address</source>
-        <translation>Pošlji kovance na GreenCoin naslov</translation>
+        <source>Send coins to a Landcoin address</source>
+        <translation>Pošlji kovance na Landcoin naslov</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for GreenCoin</source>
-        <translation>Spremeni nastavitve za Greencoin</translation>
+        <source>Modify configuration options for Landcoin</source>
+        <translation>Spremeni nastavitve za Landcoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -436,8 +436,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <source>GreenCoin</source>
-        <translation>GreenCoin</translation>
+        <source>Landcoin</source>
+        <translation>Landcoin</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -446,8 +446,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About GreenCoin</source>
-        <translation>&amp;O GreenCoin</translation>
+        <source>&amp;About Landcoin</source>
+        <translation>&amp;O Landcoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -498,13 +498,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>GreenCoin client</source>
-        <translation>GreenCoin program</translation>
+        <source>Landcoin client</source>
+        <translation>Landcoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to GreenCoin network</source>
-        <translation><numerusform>%n aktivne povezave na GreenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GreenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GreenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GreenCoin omrežje</numerusform></translation>
+        <source>%n active connection(s) to Landcoin network</source>
+        <translation><numerusform>%n aktivne povezave na Landcoin omrežje</numerusform><numerusform>%n aktivnih povezav na Landcoin omrežje</numerusform><numerusform>%n aktivnih povezav na Landcoin omrežje</numerusform><numerusform>%n aktivnih povezav na Landcoin omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -598,8 +598,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid GreenCoin address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega GreenCoin naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Landcoin address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega Landcoin naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -721,8 +721,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. GreenCoin can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program GreenCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. Landcoin can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program Landcoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1055,8 +1055,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid GreenCoin address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven GreenCoin naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Landcoin address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven Landcoin naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1074,8 +1074,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>GreenCoin-Qt</source>
-        <translation>GreenCoin-Qt</translation>
+        <source>Landcoin-Qt</source>
+        <translation>Landcoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1147,13 +1147,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start GreenCoin after logging in to the system.</source>
-        <translation>Avtomatično zaženi GreenCoin ob zagonu sistema.</translation>
+        <source>Automatically start Landcoin after logging in to the system.</source>
+        <translation>Avtomatično zaženi Landcoin ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start GreenCoin on system login</source>
-        <translation>&amp;Zaženi GreenCoin ob prijavi v sistem</translation>
+        <source>&amp;Start Landcoin on system login</source>
+        <translation>&amp;Zaženi Landcoin ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1162,8 +1162,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the GreenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za GreenCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the Landcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za Landcoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1192,7 +1192,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the GreenCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Landcoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1237,8 +1237,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting GreenCoin.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu GreenCoin aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Landcoin.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu Landcoin aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1304,8 +1304,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting GreenCoin.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu GreenCoin aplikacije</translation>
+        <source>This setting will take effect after restarting Landcoin.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu Landcoin aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1323,8 +1323,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GreenCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z GreenCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Landcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z Landcoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1397,7 +1397,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start greencoin: click-to-pay handler</source>
+        <source>Cannot start landcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1565,8 +1565,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the GreenCoin-Qt help message to get a list with possible GreenCoin command-line options.</source>
-        <translation>Prikaži GreenCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice GreenCoin aplikacije</translation>
+        <source>Show the Landcoin-Qt help message to get a list with possible Landcoin command-line options.</source>
+        <translation>Prikaži Landcoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice Landcoin aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1585,13 +1585,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>GreenCoin - Debug window</source>
-        <translation>GreenCoin - okno za odpravljanje napak</translation>
+        <source>Landcoin - Debug window</source>
+        <translation>Landcoin - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>GreenCoin Core</source>
-        <translation>GreenCoin jedro</translation>
+        <source>Landcoin Core</source>
+        <translation>Landcoin jedro</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1600,8 +1600,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the GreenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri GreenCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the Landcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri Landcoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1610,8 +1610,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the GreenCoin RPC console.</source>
-        <translation>Dobrodošli v GreenCoin RPC konzoli.</translation>
+        <source>Welcome to the Landcoin RPC console.</source>
+        <translation>Dobrodošli v Landcoin RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1791,8 +1791,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite GreenCoin naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Vnesite Landcoin naslov (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1891,8 +1891,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid GreenCoin address</source>
-        <translation>OPOZORILO: Neveljaven GreenCoin naslov</translation>
+        <source>WARNING: Invalid Landcoin address</source>
+        <translation>OPOZORILO: Neveljaven Landcoin naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1924,7 +1924,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>The address to send the payment to (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1965,8 +1965,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite GreenCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Vnesite Landcoin naslov (npr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
 </context>
 <context>
@@ -1989,8 +1989,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Naslov s katerim želite podpisati sporočilo (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address to sign the message with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Naslov s katerim želite podpisati sporočilo (npr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2026,8 +2026,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this GreenCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva GreenCoin naslova</translation>
+        <source>Sign the message to prove you own this Landcoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva Landcoin naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2053,13 +2053,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Naslov s katerim je bilo podpisano sporočilo (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>The address the message was signed with (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Naslov s katerim je bilo podpisano sporočilo (npr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified GreenCoin address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim GreenCoin naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified Landcoin address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim Landcoin naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2069,8 +2069,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a GreenCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite GreenCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Landcoin address (e.g. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</source>
+        <translation>Vnesite Landcoin naslov (npr. LeTD3xRpRvfr6pEUW2CVAZNgVKaZVKUSoM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2079,8 +2079,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter GreenCoin signature</source>
-        <translation>Vnesite GreenCoin podpis</translation>
+        <source>Enter Landcoin signature</source>
+        <translation>Vnesite Landcoin podpis</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2658,8 +2658,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+171"/>
-        <source>GreenCoin version</source>
-        <translation>GreenCoin različica</translation>
+        <source>Landcoin version</source>
+        <translation>Landcoin različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2668,7 +2668,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or greencoind</source>
+        <source>Send command to -server or landcoind</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2688,13 +2688,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: greencoin.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: greencoin.conf)</translation>
+        <source>Specify configuration file (default: landcoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: landcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: greencoind.pid)</source>
-        <translation>Določi pid datoteko (privzeto: greencoin.pid)</translation>
+        <source>Specify pid file (default: landcoind.pid)</source>
+        <translation>Določi pid datoteko (privzeto: landcoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2711,13 +2711,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=greencoinrpc
+rpcuser=landcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Landcoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2823,8 +2823,8 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GreenCoin will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno GreenCoin ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Landcoin will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno Landcoin ne bo deloval.</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -3118,7 +3118,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+8"/>
-        <source>Initialization sanity check failed. GreenCoin is shutting down.</source>
+        <source>Initialization sanity check failed. Landcoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3173,13 +3173,13 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of GreenCoin</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo GreenCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Landcoin</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo Landcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart GreenCoin to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite GreenCoin za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart Landcoin to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite Landcoin za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3238,8 +3238,8 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+124"/>
-        <source>Unable to bind to %s on this computer. GreenCoin is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča GreenCoin aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. Landcoin is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča Landcoin aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3273,7 +3273,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GreenCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. GreenCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Landcoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

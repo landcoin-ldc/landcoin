@@ -48,53 +48,49 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0x05;
-        pchMessageStart[1] = 0x22;
-        pchMessageStart[2] = 0x53;
-        pchMessageStart[3] = 0x07;
-	vAlertPubKey = ParseHex("041cb997e1222cc7c008b5354714c7cdd846eb4337a7039c0900972aa36cf3999ba3060eff592d29919ee65946c0ccab37f03bd766e916813af50dd80585d9ef88");
-        nDefaultPort = 11517;
-        nRPCPort = 17515;
+        pchMessageStart[0] = 0x22;
+        pchMessageStart[1] = 0x50;
+        pchMessageStart[2] = 0x70;
+        pchMessageStart[3] = 0x35;
+        vAlertPubKey = ParseHex("04cc7db9d832f6f1a77c869e6cbb84361bfc6e2b0eeb45fbb5d030a56f9861b7146df48cbcc1761fe723fbdcd2792581fb427d1da798c731d33b93c9089f096609");
+        nDefaultPort = 32457;
+        nRPCPort = 32458;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 
-        // Build the genesis block. Note that the output of the genesis coinbase cannot
-        // be spent as it did not originally exist in the database.
-        //
-	// CBlock(hash=000009b88ae01c8e009d08651c904a1b00f9e24d72538f49c242ba2ee14d859a, ver=1, pow_hash=000009b88ae01c8e009d08651c904a1b00f9e24d72538f49c242ba2ee14d859a, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1450199185, nBits=1e0fffff, nNonce=921682, vtx=1)
-  	//  Coinbase(hash=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    	//   CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a15477265656e436f696e5632204c61756e636865732e)
-    	//   CTxOut(empty)
-  	//  vMerkleTree: f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4
-
-        const char* pszTimestamp = "GreenCoinV2 Launches.";
+        const char* pszTimestamp = "Battle of Johnsonville, Tennessee";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1393221600, vin, vout, 0);
+        CTransaction txNew(1, 1478248353, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1450199185;
+        genesis.nTime    = 1478248353;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 921682;
-	hashGenesisBlock = genesis.GetHash();
-	nLastPoWBlock    = 2160;
-        assert(hashGenesisBlock == uint256("0x000009b88ae01c8e009d08651c904a1b00f9e24d72538f49c242ba2ee14d859a"));
-        assert(genesis.hashMerkleRoot == uint256("0xf13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4"));
+        genesis.nNonce   = 1186427;
+        hashGenesisBlock = genesis.GetHash();
+        nLastPoWBlock    = 500;
 
-        vSeeds.push_back(CDNSSeedData("greencoin.crypto-expert.com", "greencoin.crypto-expert.com"));
-	vSeeds.push_back(CDNSSeedData("grcdns.infernopool.com", "grcdns.infernopool.com"));
+        assert(hashGenesisBlock == uint256("0x0000013fc13bc6734691741872d8bc2ed22cf9cf20e30f1f7553599ef603f858"));
+        assert(genesis.hashMerkleRoot == uint256("0x843bbea594982d111256cc89ef934803c1d6022159146f07cd3f2827284e8ac0"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(38);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(85);
-        base58Prefixes[SECRET_KEY] =     list_of(166);
+        vSeeds.push_back(CDNSSeedData("45.32.115.249", "45.32.115.249"));
+        vSeeds.push_back(CDNSSeedData("45.76.129.175", "45.76.129.175"));
+        vSeeds.push_back(CDNSSeedData("45.63.86.149", "45.63.86.149"));
+        vSeeds.push_back(CDNSSeedData("45.32.231.91", "45.32.231.91"));
+
+        base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
+        base58Prefixes[SCRIPT_ADDRESS] = list_of(122);
+        base58Prefixes[SECRET_KEY] =     list_of(176);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+
+
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -125,21 +121,21 @@ public:
         pchMessageStart[2] = 0x2f;
         pchMessageStart[3] = 0xdc;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
-        vAlertPubKey = ParseHex("0471dc165db490094d35cde15b1f5d755fa6ad6f2b5ed0f340e3f17f57389c3c2af113a8cbcc885bde73305a553b5640c83021128008ddf882e856336269080496");
+        vAlertPubKey = ParseHex("04cc7db9d832f6f1a77c869e6cbb84361bfc6e2b0eeb45fbb5d030a56f9861b7146df48cbcc1761fe723fbdcd2792581fb427d1da798c731d33b93c9089f096609");
         nDefaultPort = 25713;
         nRPCPort = 25712;
         strDataDir = "testnet";
-	// CBlock(hash=00003845b6cba6a72017f62f5299ecfbb832a4675082543d2db1e091b37a4b80, ver=1, pow_hash=00003845b6cba6a72017f62f5299ecfbb832a4675082543d2db1e091b37a4b80, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1450199186, nBits=1f00ffff, nNonce=57246, vtx=1)
-  	//  Coinbase(hash=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    	//    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a15477265656e436f696e5632204c61756e636865732e)
-    	//    CTxOut(empty)
-  	//  vMerkleTree: f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4
+        // CBlock(hash=00003845b6cba6a72017f62f5299ecfbb832a4675082543d2db1e091b37a4b80, ver=1, pow_hash=00003845b6cba6a72017f62f5299ecfbb832a4675082543d2db1e091b37a4b80, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1450199186, nBits=1f00ffff, nNonce=57246, vtx=1)
+        //  Coinbase(hash=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a15477265656e436f696e5632204c61756e636865732e)
+        //    CTxOut(empty)
+        //  vMerkleTree: f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4
 
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-	genesis.nTime  = 1450199186;
-	genesis.nNonce = 57246;
+        genesis.nTime  = 1450199185;
+        genesis.nNonce = 1307090;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00003845b6cba6a72017f62f5299ecfbb832a4675082543d2db1e091b37a4b80"));
+        //assert(hashGenesisBlock == uint256("0x00000109e16b692e4ee543c55f51b0e2e13d5709f0cc36752f7805b3d98a8e1c"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -169,19 +165,19 @@ public:
         pchMessageStart[2] = 0xfb;
         pchMessageStart[3] = 0xaf;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 5);
-	// CBlock(hash=005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba, ver=1, pow_hash=005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1450199187, nBits=2007ffff, nNonce=33, vtx=1)
-  	//   Coinbase(hash=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    	//    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a15477265656e436f696e5632204c61756e636865732e)
-    	//    CTxOut(empty)
-  	//   vMerkleTree: f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4
+        // CBlock(hash=005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba, ver=1, pow_hash=005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1450199187, nBits=2007ffff, nNonce=33, vtx=1)
+        //   Coinbase(hash=f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a15477265656e436f696e5632204c61756e636865732e)
+        //    CTxOut(empty)
+        //   vMerkleTree: f13219df992036c16529305d015d11fe84ee11550d060bfed7a8cc58951040c4
 
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 33;
-	genesis.nTime  = 1450199187;
+        genesis.nTime  = 1450199187;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18555;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba"));
+        //assert(hashGenesisBlock == uint256("0x005526eaf237a937d98a85568d99a317b658ca29d12a8e23033e003828087bba"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
