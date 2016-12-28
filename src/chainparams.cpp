@@ -78,10 +78,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0000013fc13bc6734691741872d8bc2ed22cf9cf20e30f1f7553599ef603f858"));
         assert(genesis.hashMerkleRoot == uint256("0x843bbea594982d111256cc89ef934803c1d6022159146f07cd3f2827284e8ac0"));
 
-        vSeeds.push_back(CDNSSeedData("45.32.115.249", "45.32.115.249"));
-        vSeeds.push_back(CDNSSeedData("45.76.129.175", "45.76.129.175"));
-        vSeeds.push_back(CDNSSeedData("45.63.86.149", "45.63.86.149"));
-        vSeeds.push_back(CDNSSeedData("45.32.231.91", "45.32.231.91"));
+        vSeeds.push_back(CDNSSeedData("seed.landcoin.co", "seed.landcoin.co"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(122);
